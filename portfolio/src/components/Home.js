@@ -10,14 +10,17 @@ class Home extends Component {
         <div className="content">
             <div className="subcontent">
                 <div className="cont">
-            Hello!.<br/>
-            I`m Nengo Ally<br/>
-            a software developer<br/>
-            and public-speaker based<br/>
-            in Kigali.<br/>
-            <br/>
-            If you want to hire me, <br/>
-            you are just a call or mail away.<br/>
+                <span style={{color:"#F3C00A"}}>Hello!.</span>
+            I`m <span style={{color:"#F3C00A"}}>Nengo Ally</span>
+            a <span style={{color:"#F3C00A"}}>software developer</span>
+            and <span style={{color:"#F3C00A"}}>public-speaker</span> based
+            in Kigali.
+            If you want to <span style={{color:"#F3C00A"}}>hire</span> me, 
+            you are just a <span style={{color:"#F3C00A"}}>call or mail away.</span>
+            <div className="clicks">
+            <div  className="clicks1"><a Link="#">Hire me</a></div> 
+            <div  className="clicks2"><a Link="#">My work</a></div>
+            </div>
                 </div>
             </div>
             <div className="sidebar">
@@ -26,9 +29,9 @@ class Home extends Component {
         </div>
         <div className="footer">
             <h3>contact me:</h3>
-        <div class="btn" id="buttons"><a href="#">Mail</a></div>
-            <div class="btn" id="buttons"><a href="#">Twitter</a></div>
-            <div class="btn" id="buttons"><a href="#">Facebook</a></div>
+        <div class="btn" id="buttons"><a href="#">	&#x2709;Mail</a></div>
+            <div class="btn" id="buttons"><a href="#">&#xf099;Twitter</a></div>
+            <div class="btn" id="buttons"><a href="#">&#xf230;Facebook</a></div>
         </div>
     </body>
         )
