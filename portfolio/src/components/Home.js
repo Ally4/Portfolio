@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../layouts/Navbar';
 import home from '../44980855102_a4c36d142a_o.jpg'
 
@@ -18,8 +19,8 @@ class Home extends Component {
             If you want to <span style={{color:"#F3C00A"}}>hire</span> me, 
             you are just a <span style={{color:"#F3C00A"}}>call or mail away.</span>
             <div className="clicks">
-            <div  className="clicks1"><a Link="#">Hire me</a></div> 
-            <div  className="clicks2"><a Link="#">My work</a></div>
+            <div  className="clicks1"><a href="#">Hire me</a></div> 
+            <div  className="clicks2"><a href="#">My work</a></div>
             </div>
                 </div>
             </div>
