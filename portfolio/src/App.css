@@ -3,6 +3,7 @@
     border: 0px;
     background-color: black;
     overflow-x: hidden;
+
 }
 
 .navbar h2{
@@ -11,7 +12,7 @@
 }
 .navbar{
   display: grid;
-  grid-template-columns:  8fr .9fr .9fr .9fr .9fr .9fr .9fr;
+  grid-template-columns:  8fr .5fr .6fr 1fr .7fr .5fr .9fr;
   background-color:black;
   color: white;
 }
@@ -68,4 +69,33 @@
 }
 .cont{
   color: white;
+  font-size: 32px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.clicks{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding: .7em;
+}
+.clicks1{
+  justify-items: start;
+  font-size: 15px;
+  font-weight: normal;
+  padding-left: 20px;
+  padding: 7px;
+  color: black;
+  background-color: #F3C00A;
+  border-radius: 20px;
+}
+.clicks2{
+  justify-items: end;
+  font-size: 15px;
+  font-weight: normal;
+  padding-right: 20px;
+  padding: 7px;
+  border: 1px solid white;
+  border-radius: 20px;
 }
