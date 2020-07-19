@@ -86,6 +86,7 @@
   font-weight: normal;
   padding-left: 20px;
   padding: 7px;
+  text-decoration: none;
   color: black;
   background-color: #F3C00A;
   border-radius: 20px;
@@ -98,4 +99,15 @@
   padding: 7px;
   border: 1px solid white;
   border-radius: 20px;
+  text-decoration: none;
+  color: white;
+}
+.clicks a{
+  text-decoration: none;
+}
+.clicks .clicks1 a{
+  color: black;
+}
+.clicks .clicks2 a{
+  color: white;
 }
