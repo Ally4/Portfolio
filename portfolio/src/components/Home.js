@@ -1,38 +1,68 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Navbar from '../layouts/Navbar';
-import home from '../44980855102_a4c36d142a_o.jpg'
-
+import Navbar from './Navbar';
+import homePicture from '../pictures/44980855102_a4c36d142a_o.jpg';
+import aboutPicture from '../pictures/23663827635_68326e7357_k.jpg';
+import facebookLogo from '../pictures/iconmonstr-facebook-2-240.png';
+import twitterLogo from '../pictures/iconmonstr-twitter-2-240.png';
 class Home extends Component {
     render() {
         return (
             <body>
             <Navbar />
-        <div className="content">
-            <div className="subcontent">
-                <div className="cont">
-                <span style={{color:"#F3C00A"}}>Hello!.</span>
-            I`m <span style={{color:"#F3C00A"}}>Nengo Ally</span>
-            a <span style={{color:"#F3C00A"}}>software developer</span>
-            and <span style={{color:"#F3C00A"}}>public-speaker</span> based
-            in Kigali.
-            If you want to <span style={{color:"#F3C00A"}}>hire</span> me, 
-            you are just a <span style={{color:"#F3C00A"}}>call or mail away.</span>
-            <div className="clicks">
-            <div  className="clicks1"><a href="#">Hire me</a></div> 
-            <div  className="clicks2"><a href="#">My work</a></div>
+            <div className="container">
+            <div className="information">
+                <div className="introduction">
+                    <div className="cont">
+                <span className="span-color" >Hello!. </span>
+            I`m <span className="span-color">Nengo Ally </span>
+             a <span className="span-color">software developer </span>
+            and <span className="span-color">public-speaker.</span>
             </div>
+                </div>                
+                <div className="introduction">
+                    <img className="picture" src={homePicture} alt="home" />
+                </div>
+                <div className="introduction">
+                    <img className="picture" src={aboutPicture} alt="about" />
+                </div>
+                <div className="introduction">
+                     <div className="subcontent about">
+                <div className="about">
+                    <div className="about1">About me</div>
+                    <div className="about2">About me</div>
+                </div>
+                <div className="smallIntro" >A multifarious person and a life long learner</div>
+                <div className="name">
+                    <div className="name1">Name:</div>
+                    <div className="name2">NENGO Ally</div>
+                </div>
+                <div className="bday">
+                    <div className="bday1">Date of birth:</div>
+                    <div className="bday2">December 12, 1993</div>
+                </div>
+                <div className="address">
+                    <div className="address1">Address</div>
+                    <div className="address2">Rwanda, Kigali, Gasabo</div>
+                </div>
+                <div className="zipcode">
+                    <div className="zipcode1">Zipcode:</div>
+                    <div className="zipcode2">+(250)</div>
+                </div>
+                <div className="email">
+                    <div className="email1">Email:</div>
+                    <div className="email2">El.ally741@gmail.com</div>
+                </div>
+                <div className="phone">
+                    <div className="phone1">Telephone:</div>
+                    <div className="phone2">+(250)784403223</div>
                 </div>
             </div>
-            <div className="sidebar">
-                <div className="size"><img src={home} id="size"></img></div>
-            </div>
+                </div>
         </div>
+    </div>
         <div className="footer">
-            <h3>contact me:</h3>
-        <div class="btn" id="buttons"><a href="#">	&#x2709;Mail</a></div>
-            <div class="btn" id="buttons"><a href="#">&#xf099;Twitter</a></div>
-            <div class="btn" id="buttons"><a href="#">&#xf230;Facebook</a></div>
+            <div class="btn1" id="buttons"><a href="https://twitter.com/AllyNengo"><img src={twitterLogo} alt="logo-twitter" id="logo"></img>Twitter</a></div>
+            <div class="btn2" id="buttons"><a href="https://web.facebook.com/el.ally3/"><img src={facebookLogo} alt="logo-facebook" id="logo"></img>Facebook</a></div>
         </div>
     </body>
         )
