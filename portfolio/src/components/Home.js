@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import homePicture from '../pictures/44980855102_a4c36d142a_o.jpg';
 import aboutPicture from '../pictures/23663827635_68326e7357_k.jpg';
+import blogPicture from '../pictures/6a01157041f4e3970b01b7c82eb758970b-320wi.png';
 import facebookLogo from '../pictures/iconmonstr-facebook-2-240.png';
 import twitterLogo from '../pictures/iconmonstr-twitter-2-240.png';
 class Home extends Component {
@@ -9,7 +10,7 @@ class Home extends Component {
         return (
             <body>
             <Navbar />
-            <div className="container">
+    <div className="container">
             <div className="information">
                 <div className="introduction">
                     <div className="cont">
@@ -60,6 +61,55 @@ class Home extends Component {
                 </div>
         </div>
     </div>
+    <div className="containerBlog">
+                <div className="blog">
+                    <div className="head1">Blogs</div>
+                    <div className="head2">Blogs</div>
+                </div>
+                <div className="smallIntroBlog" >Here are Ally`s blogs</div><br></br>
+                <div className="blogs">
+                <div className="blog1">
+                    <div className="pictureBlog"><img src={blogPicture} id="imageBlog"></img></div>
+                    <div className="titleBlog">Tech and people</div>
+                    <div className="bodyBlog">The behaviour that people have regarding ...</div>
+                </div>
+                <div className="blog1">
+                    <div className="pictureBlog"><img src={blogPicture} id="imageBlog"></img></div>
+                    <div className="titleBlog">Tech and people</div>
+                    <div className="bodyBlog">The behaviour that people have regarding ...</div>
+                </div>
+                <div className="blog1">
+                    <div className="pictureBlog"><img src={blogPicture} id="imageBlog"></img></div>
+                    <div className="titleBlog">Tech and people</div>
+                    <div className="bodyBlog">The behaviour that people have regarding ...</div>
+                </div>
+                <div className="blog1">
+                    <div className="pictureBlog"><img src={blogPicture} id="imageBlog"></img></div>
+                    <div className="titleBlog">Tech and people</div>
+                    <div className="bodyBlog">The behaviour that people have regarding ...</div>
+                </div>
+                <div className="blog1">
+                    <div className="pictureBlog"><img src={blogPicture} id="imageBlog"></img></div>
+                    <div className="titleBlog">Tech and people</div>
+                    <div className="bodyBlog">The behaviour that people have regarding ...</div>
+                </div>
+                <div className="blog1">
+                    <div className="pictureBlog"><img src={blogPicture} id="imageBlog"></img></div>
+                    <div className="titleBlog">Tech and people</div>
+                    <div className="bodyBlog">The behaviour that people have regarding ...</div>
+                </div>
+                <div className="blog1">
+                    <div className="pictureBlog"><img src={blogPicture} id="imageBlog"></img></div>
+                    <div className="titleBlog">Tech and people</div>
+                    <div className="bodyBlog">The behaviour that people have regarding ...</div>
+                </div>
+                <div className="blog1">
+                    <div className="pictureBlog"><img src={blogPicture} id="imageBlog"></img></div>
+                    <div className="titleBlog">Tech and people</div>
+                    <div className="bodyBlog">The behaviour that people have regarding ...</div>
+                </div>
+                </div>
+            </div>
         <div className="footer">
             <div class="btn1" id="buttons"><a href="https://twitter.com/AllyNengo"><img src={twitterLogo} alt="logo-twitter" id="logo"></img>Twitter</a></div>
             <div class="btn2" id="buttons"><a href="https://web.facebook.com/el.ally3/"><img src={facebookLogo} alt="logo-facebook" id="logo"></img>Facebook</a></div>
