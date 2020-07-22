@@ -1,4 +1,8 @@
- body{
+*{
+  margin: 0px;
+  border: 0px;
+}
+body{
   margin: 0px;
   border: 0px;
   background-color: black;
@@ -44,10 +48,18 @@
   text-transform: uppercase;
 }
 
-.container{
+/* .container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+} */
+
+.container{
+  flex: 3;
+  height: auto;
+  background-color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .subcontainer1{
@@ -111,14 +123,6 @@
   width: 20px;
 }
 
-.container{
-  flex: 3;
-  height: auto;
-  background-color: black;
-  font-size: 20px;
-  font-weight: bold;
-}
-
 .information{
   display: flex;
   flex-wrap: wrap;
@@ -126,6 +130,7 @@
 }
 
 .introduction{
+  
   padding: 50px;
   border-radius: .3em;
   margin-bottom: 10px;
@@ -136,16 +141,13 @@
   height: 500px;
 }
 
-.about{
+.about {
   color: white;
+  justify-content: center;
 }
 
 .subcontent .about{
   display: grid;
-}
-
-.about{
-  justify-content: center;
 }
 
 .about1{
@@ -222,3 +224,67 @@
 .phone2{
   opacity: 70%;
 }
+
+.containerBlog{
+  display: grid;
+}
+
+.containerBlog, .blog{
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.head1{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.head2{
+  font-size: 60px;
+  font-weight: bolder;
+  opacity: 30%;
+}
+
+.smallIntroBlog{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 2px;
+  opacity: 70%;
+}
+
+.blogs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.blog1{
+  display: flex;
+  flex-direction: column;
+}
+
+.pictureBlog{
+  height: 60%;
+  width: 60%;
+  padding-left: 50px;  
+}
+
+#imageBlog{
+  height: 200px;
+  width: 200px;
+  border-radius: 1em;
+}
+.titleBlog{
+  justify-content: center;
+  font-weight: bolder;
+  padding-top: 30px;  
+ }
+
+.bodyBlog{
+  justify-content: center;
+  padding-top: 10px;
+ }
+
