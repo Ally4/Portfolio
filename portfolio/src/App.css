@@ -6,7 +6,6 @@ body{
   margin: 0px;
   border: 0px;
   background-color: black;
-  overflow-x: hidden;
 }
 
 .navbar h2{
@@ -161,6 +160,8 @@ body{
 
 .smallIntro{
   text-align: center;
+  
+  font-size: 30px;
   padding: 2px;
   opacity: 70%;
 }
@@ -227,6 +228,7 @@ body{
 
 .containerBlog{
   display: grid;
+  gap: 1em;
 }
 
 .containerBlog, .blog{
@@ -236,12 +238,12 @@ body{
 }
 
 .head1{
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bolder;
 }
 
 .head2{
-  font-size: 60px;
+  font-size: 70px;
   font-weight: bolder;
   opacity: 30%;
 }
@@ -249,7 +251,7 @@ body{
 .smallIntroBlog{
   text-align: center;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 30px;
   padding: 2px;
   opacity: 70%;
 }
@@ -259,6 +261,8 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-between;
+  padding-left: .7em ;
+  padding-right: .7em ;
 }
 
 .blog1{
@@ -288,3 +292,282 @@ body{
   padding-top: 10px;
  }
 
+
+.containerEducation, .Education{
+  flex: 1;
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+
+.smallIntroEducation{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 2px;
+  opacity: 70%;
+}
+
+.Educations{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: .7em ;
+  padding-right: .7em ;
+}
+
+.Education1{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-bottom: 20px;
+}
+
+.pictureEducation{
+  height: 250px;
+  width: 100%;
+  background-color: rgb(34, 32, 32);
+  border-radius: 1em;
+}
+
+#imageEducation{
+  height: 300px;
+  width: 300px;
+  border-radius: 1em;
+}
+.year{
+  padding-top: 15px;
+  font-weight: bolder; 
+  text-align: start;
+  padding-left: 10px;
+  color: #F3C00A;
+ }
+.degree{
+  padding-top: 15px;
+  font-weight: bolder; 
+  text-align: start;
+  padding-left: 10px;
+ }
+.institution{
+  padding-top: 15px;
+  font-weight: bolder; 
+  text-align: start;
+  padding-left: 10px;
+  opacity: 60%;
+ }
+
+.bodyEducation{
+  display: grid;
+  padding-left: 10px;
+  padding-top: 10px;
+ }
+.paragraph{
+  padding-bottom: 1em;
+  font-size: 20px;
+ }
+
+ .containerSkills-Resume, .Skills-Resume{
+  flex: 1;
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+
+.smallIntroSkills-Resume{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 2px;
+  opacity: 70%;
+}
+
+.smallIntroSkills-Resume-tech{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  padding: 2px;
+}
+
+.smallIntroSkills-Resume-lang{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  padding: 2px;
+}
+
+.lang{
+  font-size: 20px;
+}
+
+.Skills-Resumes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: .7em ;
+  padding-right: .7em ;
+}
+
+.Skills-Resume1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 1.5em ;
+}
+
+.skill{
+  font-weight: bolder;
+  font-size: 30px;
+  color: #F3C00A;
+  margin: 0 10px;
+}
+
+.skill-lang{
+  font-weight: bolder;
+  font-size: 30px;
+  color: #F3C00A;
+  margin: 0 10px;
+  padding: 20px;
+}
+
+.pictureSkills-Resume{
+  height: 250px;
+  width: 100%;
+  background-color: rgb(34, 32, 32);
+  border-radius: 1em;
+}
+
+#imageSkills-Resume{
+  height: 300px;
+  width: 300px;
+  border-radius: 1em;
+}
+
+.titleResume{
+  justify-content: center;
+  font-weight: bolder;
+  padding-top: 30px;  
+  color: #F3C00A;
+ }
+
+ .pictureResume{
+  height: 60%;
+  width: 60%;
+  padding-left: 50px;  
+}
+
+#imageResume{
+  height: 200px;
+  width: 200px;
+  border-radius: 1em;
+}
+
+.resume1{
+  display: flex;
+  flex-direction: column;
+}
+
+.resumes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: .7em ;
+  padding-right: .7em ;
+}
+
+.smallIntroResume{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 2px;
+  opacity: 70%;
+}
+
+.containerResume{
+  display: grid;
+  gap: 1em;
+}
+
+.containerResume, .resume{
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.yearResume{
+  justify-content: center;
+  font-weight: bolder;
+  padding-top: 30px;  
+  color: #F3C00A;
+ }
+
+ .bodyResume{
+  justify-content: center;
+  padding-top: 10px;
+ }
+
+ .containerProject{
+  display: grid;
+  gap: 1em;
+}
+
+.containerProject, .project{
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.smallIntroProject{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 2px;
+  opacity: 70%;
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: .7em ;
+  padding-right: .7em ;
+}
+
+.project1{
+  display: flex;
+  flex-direction: column;
+}
+
+.pictureProject{
+  height: 60%;
+  width: 60%;
+  padding-left: 50px;  
+}
+
+#imageProject{
+  height: 200px;
+  width: 200px;
+  border-radius: 1em;
+}
+
+.projectTitle{
+  justify-content: center;
+  font-weight: bolder;
+  padding-top: 30px;  
+  color: #F3C00A;
+ }
+
+ .projectResume{
+  justify-content: center;
+  padding-top: 10px;
+ }
+
+ .containerProject a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
