@@ -28,6 +28,23 @@ body{
   padding-top: 300px;
 }
 
+.navbar a:hover{
+  color: #F3C00A;
+  transition: ease-in .5s;
+}
+
+.navbar a:active{
+  color: #F3C00A;
+  transition: ease-in .5s;
+}
+
+.fix-nav{
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color:black;
+}
+
 .btn{
   height: 10px;
   padding-top: 20px;
@@ -46,12 +63,6 @@ body{
   padding-top: 20px;
   text-transform: uppercase;
 }
-
-/* .container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-} */
 
 .container{
   flex: 3;
@@ -570,4 +581,46 @@ body{
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+
+.containerContact{
+  height: 250px;
+  width: 95%;
+  background-color: rgb(34, 32, 32);
+  border-radius: .5em;
+  margin-left: 25px;
+}
+
+.contacts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: .7em ;
+  padding-right: .7em ;
+}
+
+.contact1{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact, .head1{
+  color: white;
+  text-align: center;
+}
+
+.smallIntroContact{
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  font-size: 30px;
+  padding: 2px;
+  opacity: 70%;
+}
+
+.contactForm{
+  height: 60%;
+  width: 60%;
+  padding-left: 50px;  
 }
