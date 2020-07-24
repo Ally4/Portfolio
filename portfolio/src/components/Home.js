@@ -25,7 +25,7 @@ class Home extends Component {
         return (
             <body>
             <Navbar />
-    <div className="container">
+    <div className="container" id="home">
             <div className="information">
                 <div className="introduction">
                     <div className="cont">
@@ -77,7 +77,7 @@ class Home extends Component {
         </div>
     </div>
 
-    <div className="containerEducation">
+    <div className="containerEducation" id="education">
                 <div className="Education">
                     <div className="head1">educations</div>
                     <div className="head2">educations</div>
@@ -111,7 +111,7 @@ class Home extends Component {
                 </div>
                 </div>
             </div>
-    <div className="containerSkills-Resume">
+    <div className="containerSkills-Resume" id="resume">
                 <div className="Skills-Resume">
                     <div className="head1">Skills and Resume</div>
                     <div className="head2">Skills and Resume</div>
@@ -151,7 +151,7 @@ class Home extends Component {
                     </div>
                 </div>
             </div>
-            <div className="containerProject">
+            <div className="containerProject" id="project" >
                 <div className="project">
                     <div className="head1">Projects</div>
                 </div>
@@ -186,7 +186,7 @@ class Home extends Component {
                 </div>
                 </div>
             </div>
-            <div className="containerResume">
+            <div className="containerResume" id="resume">
                 <div className="resume">
                     <div className="head1">Resume</div>
                     <div className="head2">Resume</div>
@@ -245,7 +245,7 @@ class Home extends Component {
                 </div>
                 </div>
             </div>
-    <div className="containerBlog">
+    <div className="containerBlog" id="blog">
                 <div className="blog">
                     <div className="head1">Blogs</div>
                     <div className="head2">Blogs</div>
@@ -291,6 +291,17 @@ class Home extends Component {
                     <div className="pictureBlog"><img src={blogPicture} id="imageBlog" alt="blogPicture"></img></div>
                     <div className="titleBlog">Tech and people</div>
                     <div className="bodyBlog">The behaviour that people have regarding ...</div>
+                </div>
+                </div>
+            </div>
+    <div className="containerContact" id="contact">
+                <div className="contact">
+                    <div className="head1">Contact</div>
+                </div>
+                <div className="smallIntroContact" >Let be in touch</div><br></br>
+                <div className="contacts">
+                <div className="contact1">
+                    <div className="contactForm"></div>
                 </div>
                 </div>
             </div>
