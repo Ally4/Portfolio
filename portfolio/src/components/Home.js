@@ -18,6 +18,7 @@ import mentor from '../pictures/mentor.jpg';
 import report from '../pictures/report.jpg';
 import sell from '../pictures/sell.jpg';
 import vote from '../pictures/vote.png';
+import contact from '../pictures/contact.jpg';
 
 
 class Home extends Component {
@@ -161,28 +162,28 @@ class Home extends Component {
                     <div className="pictureProject"><img src={sell} id="imageProject" alt="projectPicture"></img></div>
                     <div className="projectTitle">Property-pro-lite</div>
                     <div className="projectResume">It`s an online platform</div>
-                    <div className="projectResume"><a href="https://github.com/Ally4/Property-Pro-Lite" target="blank">Repository</a></div>
-                    <div className="projectResume"><a href=" https://ally4.github.io/Property-Pro-Lite/UI" target="blank">User-Interface</a></div>
+                    <div className="projectResume"><a href="https://github.com/Ally4/Property-Pro-Lite" target="_blank" rel="noopener noreferrer">Repository</a></div>
+                    <div className="projectResume"><a href=" https://ally4.github.io/Property-Pro-Lite/UI" target="_blank" rel="noopener noreferrer">User-Interface</a></div>
                 </div>
                 <div className="project1">
                     <div className="pictureProject"><img src={mentor} id="imageProject" alt="projectPicture"></img></div>
                     <div className="projectTitle">Mentor</div>
                     <div className="projectResume">Getting a mentor online</div>
-                    <div className="projectResume"><a href="https://github.com/Ally4/Mentor" target="blank">Repository</a></div>
-                    <div className="projectResume"><a href="https://ally4.github.io/Mentor/UI" target="blank">User-Interface</a></div>
+                    <div className="projectResume"><a href="https://github.com/Ally4/Mentor" target="_blank" rel="noopener noreferrer">Repository</a></div>
+                    <div className="projectResume"><a href="https://ally4.github.io/Mentor/UI" target="_blank" rel="noopener noreferrer">User-Interface</a></div>
                 </div>
                 <div className="project1">
                     <div className="pictureProject"><img src={report} id="imageProject" alt="projectPicture"></img></div>
                     <div className="projectTitle">Your-voice</div>
                     <div className="projectResume">It`s an online reprting platform</div>
-                    <div className="projectResume"><a href="https://github.com/Ally4/Your-Voice" target="blank">Repository</a></div>
+                    <div className="projectResume"><a href="https://github.com/Ally4/Your-Voice" target="_blank" rel="noopener noreferrer">Repository</a></div>
                 </div>
                 <div className="project1">
                     <div className="pictureProject"><img src={vote} id="imageProject" alt="projectPicture"></img></div>
                     <div className="projectTitle">Your-vote</div>
                     <div className="projectResume">It`s an online voting platform</div>
-                    <div className="projectResume"><a href="https://github.com/Ally4/Your-Vote" target="blank">Repository</a></div>
-                    <div className="projectResume"><a href="https://ally4.github.io/Your-Vote/UI" target="blank">User-Interface</a></div>
+                    <div className="projectResume"><a href="https://github.com/Ally4/Your-Vote" target="_blank" rel="noopener noreferrer">Repository</a></div>
+                    <div className="projectResume"><a href="https://ally4.github.io/Your-Vote/UI" target="_blank" rel="noopener noreferrer">User-Interface</a></div>
                 </div>
                 </div>
             </div>
@@ -299,15 +300,22 @@ class Home extends Component {
                     <div className="head1">Contact</div>
                 </div>
                 <div className="smallIntroContact" >Let be in touch</div><br></br>
-                <div className="contacts">
-                <div className="contact1">
-                    <div className="contactForm"></div>
-                </div>
-                </div>
+                <div class="subcontentContact">
+                    <div className="imageContact"><img src={contact} id="imageContact" alt="contactPicture" /></div>
+            <div class="forms-create">
+                <form action="./admin-page.html">
+                  <input type="text" id="create" placeholder="Your name" required />
+                  <input type="text" id="create" placeholder="Your email" required />
+                  <textarea type="text" id="create" placeholder="Leave here your message" /><br/>
+                  <button className="send" value="Send">Send</button>
+                </form>
+                <div></div>
+              </div>
+        </div>
             </div>
         <div className="footer">
-            <div class="btn1" id="buttons"><a href="https://twitter.com/AllyNengo" target="blank"><img src={twitterLogo} alt="logo-twitter" id="logo"></img>Twitter</a></div>
-            <div class="btn2" id="buttons"><a href="https://web.facebook.com/el.ally3/" target="blank"><img src={facebookLogo} alt="logo-facebook" id="logo"></img>Facebook</a></div>
+            <div class="btn1" id="buttons"><a href="https://twitter.com/AllyNengo" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} alt="logo-twitter" id="logo"></img>Twitter</a></div>
+            <div class="btn2" id="buttons"><a href="https://web.facebook.com/el.ally3/" target="_blank" rel="noopener noreferrer"><img src={facebookLogo} alt="logo-facebook" id="logo"></img>Facebook</a></div>
         </div>
     </body>
         )

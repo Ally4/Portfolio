@@ -584,7 +584,7 @@ body{
 }
 
 .containerContact{
-  height: 250px;
+  height: 700px;
   width: 95%;
   background-color: rgb(34, 32, 32);
   border-radius: .5em;
@@ -623,4 +623,66 @@ body{
   height: 60%;
   width: 60%;
   padding-left: 50px;  
+}
+
+
+
+
+
+
+.forms-create{
+  max-width: 700px;
+  margin: auto;
+  padding: 40px;
+  justify-content: center;
+}
+
+.forms-create > form input[type=text]#create{
+  height: 30px;
+  width: 100%;
+  margin: 5px;
+  color: black;
+  font-weight: bold;    
+  border-radius: .5em;    
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.forms-create > form textarea{
+  height: 300px;
+  width: 100%;
+  margin: 5px;
+  color: black;
+  font-weight: bold;    
+  border-radius: .5em;   
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.4);
+}
+    
+
+.subcontentContact{
+  display: flex;
+  flex: 2;
+  height: 535px;
+  background-color: #e0efff;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+.forms-create{
+  flex: 1;
+  text-align: center;
+}
+
+.forms-create .send{
+  background-color: green;
+  color: black;
+  font-weight: bold;    
+  border-radius: .5em;  
+  margin-top: 20px;
+  padding: 10px 25px 10px 25px;
+}
+
+.imageContact #imageContact { 
+  flex: 1; 
+  height: 100%;
+  width: 600px;
 }
