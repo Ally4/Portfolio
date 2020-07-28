@@ -84,7 +84,7 @@ class Home extends Component {
                     <div className="head2">educations</div>
                 </div>
                 <div className="smallIntroEducation" >Education background</div><br/>
-                <div className="paragraph"><p>Ally is a human by default, a teach by accident but loving the experience and all the related aspect of it, developer by choice and love, a life-long learn for the adaptability on the change, He vehemently believe that the greatest mission of a person in this world is to leave it better in all the aspects than how he found it!.</p></div>
+                <div className="paragraph"><p>Ally is a human by default, a teacher by accident but loving the experience and all the related aspect of it, developer by choice and love, a life-long learn for the adaptability on the change, He vehemently believe that the greatest mission of a person in this world is to leave it better in all the aspects than how he found it!.</p></div>
                 <div className="Educations">
                 <div className="Education1">
                     <div className="pictureEducation">
@@ -300,9 +300,9 @@ class Home extends Component {
                     <div className="head1">Contact</div>
                 </div>
                 <div className="smallIntroContact" >Let be in touch</div><br></br>
-                <div class="subcontentContact">
+                <div className="subcontentContact">
                     <div className="imageContact"><img src={contact} id="imageContact" alt="contactPicture" /></div>
-            <div class="forms-create">
+            <div className="forms-create">
                 <form action="./admin-page.html">
                   <input type="text" id="create" placeholder="Your name" required />
                   <input type="text" id="create" placeholder="Your email" required />
@@ -314,8 +314,8 @@ class Home extends Component {
         </div>
             </div>
         <div className="footer">
-            <div class="btn1" id="buttons"><a href="https://twitter.com/AllyNengo" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} alt="logo-twitter" id="logo"></img>Twitter</a></div>
-            <div class="btn2" id="buttons"><a href="https://web.facebook.com/el.ally3/" target="_blank" rel="noopener noreferrer"><img src={facebookLogo} alt="logo-facebook" id="logo"></img>Facebook</a></div>
+            <div className="btn1" id="buttons"><a href="https://twitter.com/AllyNengo" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} alt="logo-twitter" id="logo"></img>Twitter</a></div>
+            <div className="btn2" id="buttons"><a href="https://web.facebook.com/el.ally3/" target="_blank" rel="noopener noreferrer"><img src={facebookLogo} alt="logo-facebook" id="logo"></img>Facebook</a></div>
         </div>
     </body>
         )

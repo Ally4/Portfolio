@@ -5,7 +5,7 @@ class Navbar extends Component {
         return (
             <div className="fix-nav">
         <div className="navbar">
-            <div className="btn" id="buttons" ><a href="#home" style={{color : "F3C00A;"}}>Home</a></div>
+            <div className="btn" id="buttons" ><a href="#home">Home</a></div>
             <div className="btn" id="buttons"><a href="#education">Education</a></div>
             <div className="btn" id="buttons"><a href="#resume">Skills&Resume</a></div>
             <div className="btn" id="buttons"><a href="#blog">Blog</a></div>
