@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
 import homePicture from "../pictures/44980855102_a4c36d142a_o.jpg";
 import aboutPicture from "../pictures/23663827635_68326e7357_k.jpg";
 import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";

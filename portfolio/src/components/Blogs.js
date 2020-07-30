@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
 import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";
 import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
 import blogPicture from "../pictures/6a01157041f4e3970b01b7c82eb758970b-320wi.png";

@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Home from './Home';
-import Education from './Education';
-import SkillsResume from './SkillsResume';
-import Blogs from './Blogs';
-import Contact from './Contact';
 
 class Navbar extends Component {
     render() {
