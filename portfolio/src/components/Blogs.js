@@ -1,14 +1,55 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Blog from './Blog';
 import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";
 import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
 import blogPicture from "../pictures/6a01157041f4e3970b01b7c82eb758970b-320wi.png";
 
-class Blogs extends Component {
+class Blogs extends Component {  
+  state = {
+  // value: 44
+  persons: [
+    {
+      image: '../pictures/6a01157041f4e3970b01b7c82eb758970b-320wi.png',
+      title: "Tech and people",
+      script: "The behaviour that people have regarding ...",
+    },
+    {
+      image: '../pictures/6a01157041f4e3970b01b7c82eb758970b-320wi.png',
+      title: "Tech and people",
+      script: "The behaviour that people have regarding ...",
+    },
+    {
+      image: '../pictures/6a01157041f4e3970b01b7c82eb758970b-320wi.png',
+      title: "Tech and people",
+      script: "The behaviour that people have regarding ...",
+    },
+    {
+      image: '../pictures/6a01157041f4e3970b01b7c82eb758970b-320wi.png',
+      title: "Tech and people",
+      script: "The behaviour that people have regarding ...",
+    },
+    {
+      image: '../pictures/6a01157041f4e3970b01b7c82eb758970b-320wi.png',
+      title: "Tech and people",
+      script: "The behaviour that people have regarding ...",
+    },
+    {
+      image: '../pictures/6a01157041f4e3970b01b7c82eb758970b-320wi.png',
+      title: "Tech and people",
+      script: "The behaviour that people have regarding ...",
+    },
+  ],
+};
+
   render() {
     return (
       <div>
-        <div className="containerBlog" id="blog">
+
+
+{this.state.persons.map((iterate, index) => <Blog key={index} image={iterate.image} title={iterate.title} script={iterate.script} />)}
+
+        {/* <div className="containerBlog" id="blog">
           <div className="blog">
             <div className="head1">Blogs</div>
             <div className="head2">Blogs</div>
@@ -89,7 +130,11 @@ class Blogs extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+
+
+
         <div className="footer">
           <div className="btn1" id="buttons">
             <Link

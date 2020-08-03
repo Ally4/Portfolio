@@ -5,6 +5,33 @@ import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
 import contact from "../pictures/contact.jpg";
 
 class Contact extends Component {
+  state = {
+    name: "",
+    email: "",
+    message: "",
+  };
+
+  handleChangeName = (event) => {
+    event.preventDefault();
+    this.setState({
+      name: event.target.value,
+    });
+  };
+
+  handleChangeEmail = (event) => {
+    event.preventDefault();
+    this.setState({
+      email: event.target.value,
+    });
+  };
+
+  handleChangeMessage = (event) => {
+    event.preventDefault();
+    this.setState({
+      message: event.target.value,
+    });
+  };
+
   render() {
     return (
       <div>
@@ -13,32 +40,41 @@ class Contact extends Component {
             <div className="head1">Contact</div>
           </div>
           <div className="smallIntroContact">Let be in touch</div>
-          <br/>
+          <br />
           <div className="subcontentContact">
             <div className="imageContact">
               <img src={contact} id="imageContact" alt="contactPicture" />
             </div>
             <div className="forms-create">
-              <form action="./admin-page.html">
+              <form>
                 <input
+                  value={this.state.name}
+                  onChange={this.handleChangeName}
                   type="text"
                   id="create"
                   placeholder="Your name"
                   required
                 />
                 <input
-                  type="text"
+                  value={this.state.email}
+                  onChange={this.handleChangeEmail}
+                  type="email"
                   id="create"
                   placeholder="Your email"
                   required
                 />
                 <textarea
+                  value={this.state.message}
+                  onChange={this.handleChangeMessage}
                   type="text"
                   id="create"
                   placeholder="Leave here your message"
+                  required
                 />
                 <br />
-                <button className="send" value="Send">
+                <button 
+                  className="submit"
+                  value="submit">
                   Send
                 </button>
               </form>

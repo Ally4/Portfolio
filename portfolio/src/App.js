@@ -5,7 +5,7 @@ import Education from "./components/Education";
 import SkillsResume from "./components/SkillsResume";
 import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 
 class App extends Component {
