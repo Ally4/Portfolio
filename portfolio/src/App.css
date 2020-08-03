@@ -703,6 +703,7 @@ body{
 .Log{
   display: grid;
   justify-content: center;
+  padding-top: 60px;
 }
 
 .containerLog{
@@ -710,7 +711,6 @@ body{
   background-color: #f3c10a31;
   border-radius: .5em;
   margin-left: 25px;
-
 }
 
 .log, .head1{
