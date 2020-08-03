@@ -5,6 +5,7 @@ import Education from "./components/Education";
 import SkillsResume from "./components/SkillsResume";
 import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
+import Log from "./components/LogIn";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/skills&resume&projects" component={SkillsResume} />
           <Route path="/blogs" component={Blogs} />
           <Route path="/contact" component={Contact} />
+          <Route path="/log" component={Log} />
         </Switch>
       </React.Fragment>
     );
