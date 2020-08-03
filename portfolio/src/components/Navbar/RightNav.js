@@ -8,6 +8,7 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   color: white;
   font-weight: bolder;
+  text-decoration: none;
 
   li {
     padding: 18px 10px;
@@ -36,7 +37,7 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li><Link to="/">HOME</Link></li>
+      <li><Link to="/" style={{fontDecoration:"none"}}>HOME</Link></li>
       <li><Link to="/education">EDUCATION</Link></li>
       <li><Link to="/skills&resume&projects">SKILLS&RESUME</Link></li>
       <li><Link to="/blogs">BLOG</Link></li>

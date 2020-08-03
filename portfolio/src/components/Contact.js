@@ -73,7 +73,7 @@ class Contact extends Component {
                 />
                 <br />
                 <button 
-                  className="submit"
+                  className="send"
                   value="submit">
                   Send
                 </button>
