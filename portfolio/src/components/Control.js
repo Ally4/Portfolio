@@ -5,8 +5,7 @@ class Control extends Component {
     render() {
         return (
             <div>
-                <NavbarAdmin />
-                
+                <NavbarAdmin />                
             </div>
         )
     }
