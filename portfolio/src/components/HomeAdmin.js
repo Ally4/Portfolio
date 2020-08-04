@@ -1,15 +1,16 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
+import NavbarAdmin from "./NavbarAdmin/NavbarAdmin";
 import homePicture from "../pictures/44980855102_a4c36d142a_o.jpg";
 import aboutPicture from "../pictures/23663827635_68326e7357_k.jpg";
 import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";
 import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
+
 class Home extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar />
+        <NavbarAdmin />
         <div className="container" id="home">
           <div className="information">
             <div className="introduction">

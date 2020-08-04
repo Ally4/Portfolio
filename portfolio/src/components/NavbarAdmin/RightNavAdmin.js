@@ -37,12 +37,12 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li><Link to="/" style={{fontDecoration:"none"}}>HOME</Link></li>
+      <li><Link to="/">HOME</Link></li>
       <li><Link to="/education">EDUCATION</Link></li>
       <li><Link to="/skills&resume&projects">SKILLS&RESUME</Link></li>
-      <li><Link to="/blogs">BLOG</Link></li>
-      <li><Link to="/contact">CONTACT</Link></li>
-      <li><Link to="/log">LOG</Link></li>
+      <li><Link to="/admin_blogs">BLOG</Link></li>
+      <li><Link to="/control">CONTROL</Link></li>
+      <li><Link to="/">LOGOUT</Link></li>
     </Ul>
   )
 }

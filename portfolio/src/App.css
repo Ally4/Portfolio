@@ -667,9 +667,9 @@ body{
 }
 
 .forms-create .send{
-  background-color: green;
+  background-color: #F3C00A;
   color: black;
-  font-weight: bold;    
+  font-weight: bolder;    
   border-radius: .5em;  
   margin-top: 20px;
   padding: 10px 25px 10px 25px;
@@ -713,11 +713,73 @@ body{
   margin-left: 25px;
 }
 
-.log, .head1{
+.log > .head1{
   color: #F3C00A;
   text-align: center;
   font-size: 30px;
 }
+
+
+
+
+
+
+.create_blog {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.container_create {
+  justify-content: center;
+  background-color: #f3c10a31;
+  border-radius: .5em;
+}
+
+.submit{
+  background-color: #F3C00A;
+  color: black;
+  font-weight: bolder;    
+  border-radius: .5em;  
+  margin-top: 20px;
+  padding: 10px 25px 10px 25px;
+  cursor: pointer;
+}
+
+
+
+
+
+.action{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-bottom: 1em;
+}
+
+.edit{
+  background-color: green;
+  color: black;
+  font-weight: bolder;    
+  border-radius: .5em;  
+  margin-top: 20px;
+  padding: 10px 25px 10px 25px;
+  cursor: pointer;
+}
+
+.delete{
+  background-color: red;
+  color: black;
+  font-weight: bolder;    
+  border-radius: .5em;  
+  margin-top: 20px;
+  padding: 7px 20px 7px 20px;
+  cursor: pointer;
+}
+
+
+
+
 
 @media screen and (max-width:320px){
 

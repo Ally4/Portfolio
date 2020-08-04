@@ -6,7 +6,7 @@ import CreateBlog from './CreateBlog';
 import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";
 import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
 
-class Blogs extends Component {  
+class BlogsAdmin extends Component {  
   state = {
   persons: [
     {
@@ -75,4 +75,4 @@ class Blogs extends Component {
   }
 }
 
-export default Blogs;
+export default BlogsAdmin;

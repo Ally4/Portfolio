@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import RightNav from './RightNav';
+import RightNavAdmin from './RightNavAdmin';
 
 const StyledBurger = styled.div`
   width: 2rem;
@@ -50,7 +50,7 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
-      <RightNav open={open}/>
+      <RightNavAdmin open={open}/>
     </>
   )
 }
