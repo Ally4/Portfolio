@@ -1,0 +1,184 @@
+*{
+  margin: 0px;
+  border: 0px;
+}
+body{
+  background-color: black;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.containerBlog, .blog{
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.head1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.head2{
+  font-size: 70px;
+  font-weight: bolder;
+  opacity: 30%;
+}
+
+.smallIntroBlog{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 2px;
+  opacity: 70%;
+}
+
+.contact, .head1{
+  color: white;
+  text-align: center;
+}
+
+.arrange{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.log > .head1{
+  color: #F3C00A;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+@media screen and (max-width:320px){
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .head2 {
+    display: none;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 35px;
+  } 
+}
+
+@media screen and (max-width:375px) {
+ body{
+  overflow-x: hidden;
+ }
+
+  .project > .head1, .smallIntroProject {
+    margin-left: -40px;  
+  }
+
+  .project > .head1{
+    font-size: 40px;  
+  }
+
+  .resume > .head1{
+    font-size: 40px;  
+  } 
+
+  .head2 {
+    display: none;
+  }
+
+ .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  } 
+}
+
+@media screen and (max-width:600px){ 
+  .head2 {
+    display: none;
+  } 
+
+ .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }  
+}
+
+@media screen and (max-width:900px){
+  .head2 {
+    display: none;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:1200px){
+  .head2 {
+    display: none;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:414px) {
+  body{
+   overflow-x: hidden;
+  }
+ 
+   .Skills-Resume > .head1{
+     font-size: 40px;  
+   }
+ 
+   .project > .head1, .smallIntroProject {
+     margin-left: 20px;  
+   }
+ 
+    .project > .head1{
+     font-size: 40px;  
+   }
+ 
+   .resume > .head1{
+     font-size: 40px;  
+   }
+ 
+   .head2 {
+     display: none;
+   }
+   
+   .containerEducation > .Education > .head1{
+     margin-left: 30px;
+   } 
+
+   .containerSkills-Resume > .Skills-Resume > .head1 {
+     margin-left: 10px;
+   } 
+ }
+
+@media screen and (max-width: 360px) { 
+  .containerSkills-Resume > .Skills-Resume > .head1{
+    width: 80%;
+    margin-left: 10px;
+  } 
+}

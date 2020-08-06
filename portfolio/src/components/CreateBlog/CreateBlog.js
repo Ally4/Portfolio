@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./CreateBlog.css";
 
 class CreateBlog extends Component {
   state = {

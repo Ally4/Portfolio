@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "./components/Home";
-import HomeAdmin from "./components/HomeAdmin";
-import Education from "./components/Education";
-import SkillsResume from "./components/SkillsResume";
-import Blogs from "./components/Blogs";
-import AdminBlogs from "./components/BlogsAdmin";
-import Contact from "./components/Contact";
-import Control from "./components/Control";
-import Log from "./components/LogIn";
+import Home from "./components/Home/Home";
+import HomeAdmin from "./components/HomeAdmin/HomeAdmin";
+import Education from "./components/Education/Education";
+import SkillsResume from "./components/SkillsResume/SkillsResume";
+import Blogs from "./components/Blogs/Blogs";
+import AdminBlogs from "./components/BlogsAdmin/BlogsAdmin";
+import Contact from "./components/Contact/Contact";
+import Control from "./components/Control/Control";
+import Login from "./components/Login/LogIn";
 import "./App.css";
 
 class App extends Component {
@@ -24,7 +24,7 @@ class App extends Component {
           <Route path="/admin_blogs" component={AdminBlogs} />
           <Route path="/contact" component={Contact} />
           <Route path="/control" component={Control} />
-          <Route path="/log" component={Log} />
+          <Route path="/log" component={Login} />
           <Route path="/" exact component={Home} />
         </Switch>
       </React.Fragment>

@@ -1,10 +1,9 @@
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
-import homePicture from "../pictures/44980855102_a4c36d142a_o.jpg";
-import aboutPicture from "../pictures/23663827635_68326e7357_k.jpg";
-import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";
-import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
+import "./Home.css";
+import Navbar from "../Navbar/Navbar";
+import homePicture from "../../pictures/44980855102_a4c36d142a_o.jpg";
+import aboutPicture from "../../pictures/23663827635_68326e7357_k.jpg";
+import Footer from "../Footer/Footer";
 class Home extends Component {
   render() {
     return (
@@ -63,27 +62,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="footer">
-          <div className="btn1" id="buttons">
-            <Link
-              to="https://twitter.com/AllyNengo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={twitterLogo} alt="logo-twitter" id="logo"></img>Twitter
-            </Link>
-          </div>
-          <div className="btn2" id="buttons">
-            <Link
-              to="https://web.facebook.com/el.ally3/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={facebookLogo} alt="logo-facebook" id="logo"></img>
-              Facebook
-            </Link>
-          </div>
-        </div>
+        <Footer />
       </Fragment>
     );
   }

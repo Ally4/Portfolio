@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import "./Buttons.css";
 
-export default class Actions extends Component {
+class Actions extends Component {
   render() {
     return (
       <div className="action">
@@ -14,3 +15,5 @@ export default class Actions extends Component {
     );
   }
 }
+
+export default Actions;

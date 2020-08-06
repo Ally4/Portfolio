@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
-import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";
-import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
-import contact from "../pictures/contact.jpg";
+import "./Contact.css";
+import Navbar from "../Navbar/Navbar";
+import contact from "../../pictures/contact.jpg";
+import Footer from "../Footer/Footer";
 
 class Contact extends Component {
   state = {
@@ -84,27 +83,7 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-        <div className="footer">
-          <div className="btn1" id="buttons">
-            <Link
-              to="https://twitter.com/AllyNengo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={twitterLogo} alt="logo-twitter" id="logo"></img>Twitter
-            </Link>
-          </div>
-          <div className="btn2" id="buttons">
-            <Link
-              to="https://web.facebook.com/el.ally3/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={facebookLogo} alt="logo-facebook" id="logo"></img>
-              Facebook
-            </Link>
-          </div>
-        </div>
+        <Footer />
       </div>
     );
   }

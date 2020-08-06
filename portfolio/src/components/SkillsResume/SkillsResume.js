@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
-import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";
-import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
-import sell from "../pictures/sell.jpg";
-import mentor from "../pictures/mentor.jpg";
-import report from "../pictures/report.jpg";
-import vote from "../pictures/vote.png";
-import ydpd from "../pictures/ydpd.jpg";
-import genesis from "../pictures/genesis.jpg";
-import allybase from "../pictures/allybase.PNG";
-import dream from "../pictures/dream.png";
-import impano from "../pictures/impano.png";
-import work from "../pictures/work.png";
-import aylf from "../pictures/aylf.jpg";
-import pam from "../pictures/pam.jpg";
-import tm from "../pictures/tm.jpg";
+import "./SkillsResume.css";
+import Navbar from "../Navbar/Navbar";
+import sell from "../../pictures/sell.jpg";
+import mentor from "../../pictures/mentor.jpg";
+import report from "../../pictures/report.jpg";
+import vote from "../../pictures/vote.png";
+import ydpd from "../../pictures/ydpd.jpg";
+import genesis from "../../pictures/genesis.jpg";
+import allybase from "../../pictures/allybase.PNG";
+import dream from "../../pictures/dream.png";
+import impano from "../../pictures/impano.png";
+import work from "../../pictures/work.png";
+import aylf from "../../pictures/aylf.jpg";
+import pam from "../../pictures/pam.jpg";
+import tm from "../../pictures/tm.jpg";
+import Footer from "../Footer/Footer";
 
 class SkillsResume extends Component {
   render() {
@@ -95,13 +95,13 @@ class SkillsResume extends Component {
                 </Link>
               </div>
               <div className="projectResume">
-                <a
+                <Link
                   to=" https://ally4.github.io/Property-Pro-Lite/UI"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   User-Interface
-                </a>
+                </Link>
               </div>
             </div>
             <div className="project1">
@@ -111,22 +111,22 @@ class SkillsResume extends Component {
               <div className="projectTitle">Mentor</div>
               <div className="projectResume">Getting a mentor online</div>
               <div className="projectResume">
-                <a
+                <Link
                   to="https://github.com/Ally4/Mentor"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Repository
-                </a>
+                </Link>
               </div>
               <div className="projectResume">
-                <a
+                <Link
                   to="https://ally4.github.io/Mentor/UI"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   User-Interface
-                </a>
+                </Link>
               </div>
             </div>
             <div className="project1">
@@ -138,13 +138,13 @@ class SkillsResume extends Component {
                 It`s an online reprting platform
               </div>
               <div className="projectResume">
-                <a
+                <Link
                   to="https://github.com/Ally4/Your-Voice"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Repository
-                </a>
+                </Link>
               </div>
             </div>
             <div className="project1">
@@ -156,22 +156,22 @@ class SkillsResume extends Component {
                 It`s an online voting platform
               </div>
               <div className="projectResume">
-                <a
+                <Link
                   to="https://github.com/Ally4/Your-Vote"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Repository
-                </a>
+                </Link>
               </div>
               <div className="projectResume">
-                <a
+                <Link
                   to="https://ally4.github.io/Your-Vote/UI"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   User-Interface
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -282,27 +282,7 @@ class SkillsResume extends Component {
             </div>
           </div>
         </div>
-        <div className="footer">
-          <div className="btn1" id="buttons">
-            <a
-              to="https://twitter.com/AllyNengo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={twitterLogo} alt="logo-twitter" id="logo"></img>Twitter
-            </a>
-          </div>
-          <div className="btn2" id="buttons">
-            <a
-              to="https://web.facebook.com/el.ally3/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={facebookLogo} alt="logo-facebook" id="logo"></img>
-              Facebook
-            </a>
-          </div>
-        </div>
+        <Footer />
       </div>
     );
   }

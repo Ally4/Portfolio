@@ -1,0 +1,326 @@
+*{
+  margin: 0px;
+  border: 0px;
+}
+
+body{
+  background-color: black;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.head1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.head2{
+  font-size: 70px;
+  font-weight: bolder;
+  opacity: 30%;
+}
+
+.containerEducation, .Education{
+  flex: 1;
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+
+.smallIntroEducation{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 2px;
+  opacity: 70%;
+}
+
+.Educations{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: .7em ;
+  padding-right: .7em ;
+}
+
+.Education1{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-bottom: 20px;
+}
+
+.pictureEducation{
+  height: 250px;
+  width: 100%;
+  background-color: rgb(34, 32, 32);
+  border-radius: 1em;
+}
+
+.year{
+  padding-top: 15px;
+  font-weight: bolder; 
+  text-align: start;
+  padding-left: 10px;
+  color: #F3C00A;
+ }
+
+.degree{
+  padding-top: 15px;
+  font-weight: bolder; 
+  text-align: start;
+  padding-left: 10px;
+ }
+
+.institution{
+  padding-top: 15px;
+  font-weight: bolder; 
+  text-align: start;
+  padding-left: 10px;
+  opacity: 60%;
+ }
+
+.bodyEducation{
+  display: grid;
+  padding-left: 10px;
+  padding-top: 10px;
+ }
+
+.paragraph{
+  padding-bottom: 1em;
+  font-size: 20px;
+ }
+
+.contact, .head1{
+  color: white;
+  text-align: center;
+}
+
+.log > .head1{
+  color: #F3C00A;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+@media screen and (max-width:320px){
+  .head2 {
+    display: none;
+  }
+
+  .containerEducation {
+    padding: 0px;
+  }
+
+  .smallIntroEducation, .paragraph, .Educations {
+    margin-left: 100px;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width:375px) {
+ body{
+  overflow-x: hidden;
+ }  
+  .containerEducation{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Educations > .Education1 > .pictureEducation {
+    margin-left: -60px;
+  }
+
+  .Educations > .Education1{
+    margin-left: -80px;
+  }
+
+  .Educations > .Education1{
+    margin-left: -50px;
+  }
+
+  .Skills-Resume > .head1{
+    font-size: 40px;  
+  }
+
+  .project > .head1, .smallIntroProject {
+    margin-left: -40px;  
+  }
+
+  .project > .head1{
+    font-size: 40px;  
+  }
+
+  .resume > .head1{
+    font-size: 40px;  
+  }
+
+  .head2 {
+    display: none;
+  }
+
+  .smallIntroEducation, .paragraph{
+    margin-left: 20px;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .head2 {
+    display: none;
+  }
+
+  .smallIntroEducation, .paragraph, .Educations {
+    margin-left: 20px;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:900px){
+  .head2 {
+    display: none;
+  }
+
+  .Educations {
+    margin-left: 180px;
+    gap: 1em;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:1200px){
+  .head2 {
+    display: none;
+  }
+
+  .Educations {
+    margin-left: px;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:414px) {
+  body{
+   overflow-x: hidden;
+  }
+ 
+   .containerEducation{
+     display: grid;
+     justify-content: center;
+     align-items: center;
+   }
+ 
+   .Educations > .Education1 > .pictureEducation {
+     margin-left: -60px;
+   }
+ 
+   .Educations > .Education1{
+     margin-left: -80px;
+   }
+  
+   .Skills-Resume > .head1{
+     font-size: 40px;  
+   }
+  
+   .project > .head1, .smallIntroProject {
+     margin-left: 20px;  
+   }
+ 
+   .project > .head1{
+     font-size: 40px;  
+   }
+ 
+   .resume > .head1{
+     font-size: 40px;  
+   }
+ 
+     .head2 {
+     display: none;
+   }
+  
+   .smallIntroEducation, .paragraph{
+     margin-left: 20px;
+   }
+ 
+   .containerEducation > .Education > .head1{
+     margin-left: 30px;
+   }
+ 
+    .containerSkills-Resume > .Skills-Resume > .head1 {
+     margin-left: 10px;
+   }
+  }
+
+
+
+@media screen and (max-width: 450px) {
+  .Educations > .Education1 > .pictureEducation {
+    margin-left: -60px;
+  }
+
+  .Educations > .Education1{
+    margin-left: -120px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .Educations > .Education1 > .pictureEducation {
+    margin-left: -10px;
+    width: 80%;
+  }
+
+  .Educations > .Education1{
+    margin-left: -130px;
+  }
+
+  .paragraph p{
+    width: 80%;
+    margin-left: 10px;
+  }
+
+  .containerEducation > .smallIntroEducation {
+    font-size: 25px
+  }
+  
+  .containerSkills-Resume > .Skills-Resume > .head1{
+    width: 80%;
+    margin-left: 10px;
+  }
+}

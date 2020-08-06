@@ -1,0 +1,28 @@
+*{
+  margin: 0px;
+  border: 0px;
+}
+
+body{
+  background-color: black;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+#imageBlog{
+  height: 200px;
+  width: 200px;
+  border-radius: 1em;
+}
+
+.card{
+  margin: 20px;
+  box-shadow: 1px 5px 15px rgb(173, 171, 171);
+  border-radius: .5em;
+  text-align: center;
+  background-color: #F3C00A;
+}
+
+.title{
+  font-weight: bolder;
+}

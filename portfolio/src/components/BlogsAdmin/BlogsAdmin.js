@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
-import Blog from './Blog';
-import CreateBlog from './CreateBlog';
-import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";
-import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
+import "./BlogsAdmin.css";
+import Navbar from "../Navbar/Navbar";
+import Blog from '../Blog/Blog';
+import CreateBlog from '../CreateBlog/CreateBlog';
+import Footer from '../Footer/Footer';
 
 class BlogsAdmin extends Component {  
   state = {
@@ -49,27 +48,7 @@ class BlogsAdmin extends Component {
     {this.state.persons.map((iterate, index) => <Blog key={index} title={iterate.title} script={iterate.script} />)}  
     <CreateBlog />
       </div>
-        <div className="footer">
-          <div className="btn1" id="buttons">
-            <Link
-              to="https://twitter.com/AllyNengo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={twitterLogo} alt="logo-twitter" id="logo"></img>Twitter
-            </Link>
-          </div>
-          <div className="btn2" id="buttons">
-            <Link
-              to="https://web.facebook.com/el.ally3/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={facebookLogo} alt="logo-facebook" id="logo"></img>
-              Facebook
-            </Link>
-          </div>
-        </div>
+      <Footer />
         </div>
     );
   }

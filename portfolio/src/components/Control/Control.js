@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import NavbarAdmin from "./NavbarAdmin/NavbarAdmin";
+import React, { Component } from 'react';
+import "./Control.css";
+import NavbarAdmin from "../NavbarAdmin/NavbarAdmin";
 
 class Control extends Component {
     render() {
