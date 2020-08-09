@@ -17,12 +17,15 @@ body{
 
 .card{
   margin: 20px;
-  box-shadow: 1px 5px 15px rgb(173, 171, 171);
   border-radius: .5em;
   text-align: center;
-  background-color: #F3C00A;
 }
 
 .title{
   font-weight: bolder;
+  color: white;
+}
+
+.script {
+  color: White;
 }

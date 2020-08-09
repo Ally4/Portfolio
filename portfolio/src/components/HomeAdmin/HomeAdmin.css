@@ -63,7 +63,7 @@ body {
 
 .about2 {
   font-size: 35px;
-  opacity: 30%;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .smallIntro {
@@ -71,7 +71,7 @@ body {
 
   font-size: 30px;
   padding: 2px;
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .name {
@@ -111,23 +111,23 @@ body {
 }
 
 .name2 {
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .bday2 {
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .zipcode2 {
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .email2 {
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .phone2 {
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 

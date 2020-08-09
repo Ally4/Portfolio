@@ -15,7 +15,7 @@ body{
 }
 
 .email2{
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .head1{
@@ -39,10 +39,9 @@ body{
 .smallIntroContact{
   text-align: center;
   font-weight: bolder;
-  color: white;
+  color: rgb(255, 255, 255, 0.7);
   font-size: 30px;
   padding: 2px;
-  opacity: 70%;
 }
 
 .forms-create{
@@ -212,10 +211,7 @@ body{
   .containerSkills-Resume > .Skills-Resume > .head1 {
     margin-left: 10px;
   }
-  
-  .containerContact {
-    /* margin: 25px; */
-  }
+
 }
 
 
@@ -247,9 +243,7 @@ body{
      margin-left: 10px;
    }
  
-   .containerContact {
-     /* margin-left: 10px; */
-   }
+
 
    .forms-create{
     width: 60%;

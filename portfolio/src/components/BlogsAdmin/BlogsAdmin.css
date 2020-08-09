@@ -22,7 +22,7 @@ body{
 .head2{
   font-size: 70px;
   font-weight: bolder;
-  opacity: 30%;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .smallIntroBlog{
@@ -30,7 +30,7 @@ body{
   font-weight: bolder;
   font-size: 30px;
   padding: 2px;
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .contact, .head1{

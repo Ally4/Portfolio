@@ -9,6 +9,7 @@ import AdminBlogs from "./components/BlogsAdmin/BlogsAdmin";
 import Contact from "./components/Contact/Contact";
 import Control from "./components/Control/Control";
 import Login from "./components/Login/LogIn";
+import CreateBlog from "./components/CreateBlog/CreateBlog";
 import "./App.css";
 
 class App extends Component {
@@ -24,7 +25,8 @@ class App extends Component {
           <Route path="/admin_blogs" component={AdminBlogs} />
           <Route path="/contact" component={Contact} />
           <Route path="/control" component={Control} />
-          <Route path="/log" component={Login} />
+          <Route path="/login" component={Login} />
+          <Route path="/create_blog" component={CreateBlog} />
           <Route path="/" exact component={Home} />
         </Switch>
       </React.Fragment>

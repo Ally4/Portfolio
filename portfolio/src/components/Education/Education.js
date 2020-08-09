@@ -7,7 +7,7 @@ class Education extends Component {
   render() {
     return (
       <div>
-      <Navbar />
+        <Navbar />
         <div className="containerEducation" id="education">
           <div className="Education">
             <div className="head1">educations</div>
@@ -28,38 +28,38 @@ class Education extends Component {
           <div className="Educations">
             <div className="Education1">
               <div className="pictureEducation">
-                <div className="year">2013 - 2017</div>
-                <div className="degree">Associate diploma in education</div>
-                <div className="institution">University of Rwanda</div>
-                <div className="bodyEducation">
-                  College of education, Rukara campus,
-                  <br /> faculty of education, department of sciences,
-                  <br /> option of mathematic and computer-science.{" "}
-                </div>
+                <p className="year">2013 - 2017</p>
+                <p className="degree">Associate diploma in education</p>
+                <p className="institution">University of Rwanda</p>
+                <p className="bodyEducation">
+                  College of education, Rukara campus, faculty of education,
+                  department of sciences, option of mathematic and
+                  computer-science.{" "}
+                </p>
               </div>
             </div>
             <div className="Education1">
               <div className="pictureEducation">
-                <div className="year">2010 - 2012</div>
-                <div className="degree">Secondary school diploma</div>
-                <div className="institution">
+                <p className="year">2010 - 2012</p>
+                <p className="degree">Secondary school diploma</p>
+                <p className="institution">
                   Gisenyi Adventist Secondary School (GASS)
-                </div>
-                <div className="bodyEducation">
+                </p>
+                <p className="bodyEducation">
                   The combination is mathematic, physic and computer-science.
-                </div>
+                </p>
               </div>
             </div>
             <div className="Education1">
               <div className="pictureEducation">
-                <div className="year">2009</div>
-                <div className="degree">Ordinary level</div>
-                <div className="institution">
+                <p className="year">2009</p>
+                <p className="degree">Ordinary level</p>
+                <p className="institution">
                   Ecole Secondaire Islamique de Gisenyi (ESIG)
-                </div>
-                <div className="bodyEducation">
+                </p>
+                <p className="bodyEducation">
                   This is the half of the secondary journey.
-                </div>
+                </p>
               </div>
             </div>
           </div>

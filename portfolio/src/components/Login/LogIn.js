@@ -9,14 +9,14 @@ class Log extends Component {
     password: "",
   };
 
-  handleChangeName = (event) => {
+  handleChangeEmail = (event) => {
     event.preventDefault();
     this.setState({
       email: event.target.value,
     });
   };
 
-  handleChangeEmail = (event) => {
+  handleChangePassword = (event) => {
     event.preventDefault();
     this.setState({
       password: event.target.value,
@@ -38,17 +38,17 @@ class Log extends Component {
               <div className="forms-create">
                 <form>
                   <input
-                    value={this.state.name}
-                    onChange={this.handleChangeName}
+                    value={this.state.email}
+                    onChange={this.handleChangeEmail}
                     type="email"
                     id="create"
                     placeholder="Email"
                     required
                   />
                   <input
-                    value={this.state.email}
-                    onChange={this.handleChangeEmail}
-                    type="text"
+                    value={this.state.password}
+                    onChange={this.handleChangePassword}
+                    type="password"
                     id="create"
                     placeholder="Password"
                     required

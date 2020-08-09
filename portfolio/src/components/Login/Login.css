@@ -15,7 +15,7 @@ body{
 }
 
 .email2{
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .head1{
@@ -35,7 +35,7 @@ body{
   justify-content: center;
 }
 
-.forms-create > form input[type=text]#create, form input[type=email]#create{
+.forms-create > form input[type=text]#create, form input[type=email]#create, form input[type=password]#create{
   height: 30px;
   width: 100%;
   margin: 5px;

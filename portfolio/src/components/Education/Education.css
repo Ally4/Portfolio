@@ -17,14 +17,13 @@ body{
 .head2{
   font-size: 70px;
   font-weight: bolder;
-  opacity: 30%;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .containerEducation, .Education{
   flex: 1;
   text-align: center;
   color: white;
-  padding: 50px;
 }
 
 .smallIntroEducation{
@@ -32,7 +31,7 @@ body{
   font-weight: bolder;
   font-size: 30px;
   padding: 2px;
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .Educations{
@@ -78,7 +77,7 @@ body{
   font-weight: bolder; 
   text-align: start;
   padding-left: 10px;
-  opacity: 60%;
+  color: rgb(255, 255, 255, 0.7);
  }
 
 .bodyEducation{
@@ -131,6 +130,12 @@ body{
   overflow-x: hidden;
  }  
   .containerEducation{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Educations {
     display: grid;
     justify-content: center;
     align-items: center;

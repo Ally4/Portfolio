@@ -63,15 +63,14 @@ body {
 
 .about2 {
   font-size: 35px;
-  opacity: 30%;
+  color: white;
 }
 
 .smallIntro {
   text-align: center;
-
   font-size: 30px;
   padding: 2px;
-  opacity: 70%;
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .name {
@@ -111,23 +110,23 @@ body {
 }
 
 .name2 {
-  opacity: 70%;
+  color: white;
 }
 
 .bday2 {
-  opacity: 70%;
+  color: white;
 }
 
 .zipcode2 {
-  opacity: 70%;
+  color: white;
 }
 
 .email2 {
-  opacity: 70%;
+  color: white;
 }
 
 .phone2 {
-  opacity: 70%;
+  color: white;
 }
 
 
