@@ -1,0 +1,8 @@
+.control_panel{
+    display: flex;
+}
+
+.control_list{
+    flex: 1;
+    background: greenyellow;
+}

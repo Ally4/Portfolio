@@ -1,48 +1,38 @@
 import React from "react";
 
 const Project = (props) => {
-    return (
-      <div>
+  return (
+    <div>
+      <img
+        src={props.picture_project}
+        style={{ width: "300px", height: "250px", borderRadius: "1em" }}
+        alt="project"
+      />
 
+      <p className="projectTitle">{props.project_title}</p>
 
+      <p className="projectResume">{props.project_resume}</p>
 
+      <p className="projectResume">
+        {" "}
+        <a
+          href={props.link_repository}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Repository{" "}
+        </a>
+      </p>
 
-        <p className="pictureProject">{props.picture_project}</p>
-
-        <p className="projectTitle">{props.project_title}</p>
-
-        <p className="projectResume" >{props.project_resume}</p>
-
-        <p className="projectResume" > <a href={props.link_repository} target="_blank" rel="noopener noreferrer"> Repository </a></p>
-
-        <p className="projectResume" > <a href={props.link_UI} target="_blank" rel="noopener noreferrer">User Interface </a></p>
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* <div className="project">
-          <div className="arrangementBlog">
-            <img
-              className="image"
-              src={blogPicture}
-              id="imageBlog"
-              alt="blogPicture"
-            ></img>
-            <p className="title">{props.title}</p>
-            <p className="script">{props.script}</p>
-            <Buttons />
-          </div>
-        </div> */}
-      </div>
-    );
-}
+      { props.link_UI ? <p className="projectResume">
+        {" "}
+        <a href={props.link_UI} target="_blank" rel="noopener noreferrer">
+          User Interface{" "}
+        </a>
+      </p> : "" }
+    </div>
+  );
+};
 
 export default Project;

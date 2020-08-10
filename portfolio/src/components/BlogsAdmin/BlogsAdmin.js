@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./BlogsAdmin.css";
-import Navbar from "../Navbar/Navbar";
-import Blog from '../Blog/Blog';
-import CreateBlog from '../CreateBlog/CreateBlog';
+import NavbarAdmin from "../NavbarAdmin/NavbarAdmin";
+import BlogAdmin from '../BlogAdmin/BlogAdmin';
 import Footer from '../Footer/Footer';
 
 class BlogsAdmin extends Component {  
@@ -38,15 +37,14 @@ class BlogsAdmin extends Component {
   render() {
     return (
       <div>
-      <Navbar />
+      <NavbarAdmin />
           <div className="blog">
             <div className="head1">Blogs</div>
             <div className="head2">Blogs</div>
           </div>
           <div className="smallIntroBlog">Here are Ally`s blogs</div>
       <div className="arrange">
-    {this.state.persons.map((iterate, index) => <Blog key={index} title={iterate.title} script={iterate.script} />)}  
-    <CreateBlog />
+    {this.state.persons.map((iterate, index) => <BlogAdmin key={index} title={iterate.title} script={iterate.script} />)}  
       </div>
       <Footer />
         </div>

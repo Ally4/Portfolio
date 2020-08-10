@@ -6,7 +6,11 @@ class Control extends Component {
     render() {
         return (
             <div>
-                <NavbarAdmin />                
+                <NavbarAdmin />   
+                <div className="control_panel">
+                    <div className="control_list"></div>
+                    <div className="control_items"></div>
+                </div>             
             </div>
         )
     }

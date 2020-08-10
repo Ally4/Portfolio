@@ -1,9 +1,31 @@
 import React, { Component } from "react";
 import "./Education.css";
 import Navbar from "../Navbar/Navbar";
+import School from "../School/School";
 import Footer from "../Footer/Footer";
 
 class Education extends Component {
+  state = {
+    school: [
+      {
+        year: "2013 - 2017",
+        degree: "Associate diploma in education",
+        institution:
+          "College of education, Rukara campus, faculty of education, department of sciences, option of mathematic and computer-science.",
+      },
+      {
+        year: "2010 - 2012",
+        degree: "Secondary school diploma",
+        institution: "Gisenyi Adventist Secondary School (GASS)",
+      },
+      {
+        year: "2009",
+        degree: "Ordinary level",
+        institution: "This is the half of the secondary journey.",
+      },
+    ],
+  };
+
   render() {
     return (
       <div>
@@ -26,42 +48,14 @@ class Education extends Component {
             </p>
           </div>
           <div className="Educations">
-            <div className="Education1">
-              <div className="pictureEducation">
-                <p className="year">2013 - 2017</p>
-                <p className="degree">Associate diploma in education</p>
-                <p className="institution">University of Rwanda</p>
-                <p className="bodyEducation">
-                  College of education, Rukara campus, faculty of education,
-                  department of sciences, option of mathematic and
-                  computer-science.{" "}
-                </p>
-              </div>
-            </div>
-            <div className="Education1">
-              <div className="pictureEducation">
-                <p className="year">2010 - 2012</p>
-                <p className="degree">Secondary school diploma</p>
-                <p className="institution">
-                  Gisenyi Adventist Secondary School (GASS)
-                </p>
-                <p className="bodyEducation">
-                  The combination is mathematic, physic and computer-science.
-                </p>
-              </div>
-            </div>
-            <div className="Education1">
-              <div className="pictureEducation">
-                <p className="year">2009</p>
-                <p className="degree">Ordinary level</p>
-                <p className="institution">
-                  Ecole Secondaire Islamique de Gisenyi (ESIG)
-                </p>
-                <p className="bodyEducation">
-                  This is the half of the secondary journey.
-                </p>
-              </div>
-            </div>
+            {this.state.school.map((iterate, index) => (
+              <School
+                key={index}
+                year={iterate.year}
+                degree={iterate.degree}
+                institution={iterate.institution}
+              />
+            ))}
           </div>
         </div>
         <Footer />

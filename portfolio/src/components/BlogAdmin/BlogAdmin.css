@@ -1,0 +1,31 @@
+*{
+  margin: 0px;
+  border: 0px;
+}
+
+body{
+  background-color: black;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+#imageBlog{
+  height: 200px;
+  width: 200px;
+  border-radius: 1em;
+}
+
+.card{
+  margin: 20px;
+  border-radius: .5em;
+  text-align: center;
+}
+
+.title{
+  font-weight: bolder;
+  color: white;
+}
+
+.script {
+  color: White;
+}
