@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import app from "../../config/fire";
 import styled from 'styled-components';
+
+
+const close = () => {
+    app.auth().signOut();
+};
+
 
 const Ul = styled.ul`
   list-style: none;
@@ -17,7 +24,6 @@ const Ul = styled.ul`
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #F3C00A;
-    opacity: 80%;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
@@ -43,7 +49,7 @@ const RightNav = ({ open }) => {
       <li><Link to="/admin_blogs">BLOG</Link></li>
       <li><Link to="/control">CONTROL</Link></li>
       <li><Link to="/create_blog">CREATE BLOG</Link></li>
-      <li><Link to="/">LOGOUT</Link></li>
+      <li><Link to="/" onClick={close}>LOGOUT</Link></li>
     </Ul>
   )
 }

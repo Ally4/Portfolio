@@ -1,8 +1,18 @@
 .control_panel{
     display: flex;
+    height: 550px;
 }
 
 .control_list{
     flex: 1;
-    background: greenyellow;
+    background-color: rgb(34, 32, 32);
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    border-bottom: 2px solid #F3C00A;
+}
+
+.control_items{
+    flex: 3;
+    background: rgb(118, 124, 109);
 }
