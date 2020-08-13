@@ -96,6 +96,14 @@ p{
   font-size: 30px;
 }
 
+.footer_education{ 
+  display: grid;
+  grid-template-columns:  1fr 1fr; 
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 200%;
+}
 
 @media screen and (max-width:320px){
   .Educations{

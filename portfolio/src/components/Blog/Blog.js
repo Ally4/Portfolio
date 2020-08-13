@@ -6,7 +6,11 @@ const Blog = (props) => {
     return (
         <div className="card">
             <div className="arrangementBlog">
-             <img  className="image" src={blogPicture} id="imageBlog" alt="blogPicture"></img>
+            <img
+        src={props.picture}
+        style={{ width: "300px", height: "250px", borderRadius: "1em" }}
+        alt="project"
+      />
             <p className="title">{props.title}</p>  
             <p className="script">{props.script}</p> 
             </div>

@@ -90,6 +90,16 @@ body{
 }
 
 
+.footer_login{ 
+  display: grid;
+  grid-template-columns:  1fr 1fr; 
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 200%;
+}
+
+
 @media screen and (max-width:320px){
   body{
     overflow-x: hidden;
@@ -104,6 +114,7 @@ body{
     margin-left: 35px;
   }
 }
+
 
 @media screen and (max-width:375px) {
  body{

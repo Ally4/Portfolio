@@ -58,7 +58,7 @@ class Education extends Component {
             ))}
           </div>
         </div>
-        <Footer />
+        <div className="footer_education"><Footer /></div>
       </div>
     );
   }

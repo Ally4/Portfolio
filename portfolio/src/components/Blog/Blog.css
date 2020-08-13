@@ -28,4 +28,8 @@ body{
 
 .script {
   color: White;
+  width: 300px;  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
