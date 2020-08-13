@@ -13,14 +13,6 @@ class CreateBlog extends Component {
     blogs: {},
   };
 
-  componentDidMount() {
-    db.collection("Blogs").get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-          console.log(`${doc.id} => ${doc.data()}`);
-      });
-  });
-  }
-
   handleChangeTitle = (event) => {
     event.preventDefault();
     this.setState({
