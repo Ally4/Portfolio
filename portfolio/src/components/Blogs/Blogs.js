@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Blogs.css";
 import Navbar from "../Navbar/Navbar";
 import Blog from "../Blog/Blog";
+// import Change from "../change/Change";
 import Footer from "../Footer/Footer";
 
 class Blogs extends Component {
@@ -40,6 +41,7 @@ class Blogs extends Component {
     ],
   };
 
+
   render() {
     return (
       <div>
@@ -54,6 +56,7 @@ class Blogs extends Component {
             <Blog key={index} picture={iterate.picture} title={iterate.title} script={iterate.script} />
           ))}
         </div>
+        {/* <Change /> */}
         <Footer />
       </div>
     );
