@@ -33,3 +33,7 @@ body{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.script:hover{
+  display: initial;
+}

@@ -14,7 +14,7 @@ const Blog = (props) => {
         <p className="title">{props.title}</p>
         <p className="script">{props.script}</p>
       </div>
-      <Change />
+      <Change id={props.id}/>
     </div>
   );
 };

@@ -12,6 +12,7 @@ import Control from "./components/Control/Control";
 import Login from "./components/Login/LogIn";
 import CreateBlog from "./components/CreateBlog/CreateBlog";
 import Location from "./components/Location/Location";
+import Edit from "./components/Edit/Edit";
 import "./App.css";
 import { AuthProvider } from "./Auth";
 import PrivateRoute from "./PrivateRoute";
@@ -35,7 +36,7 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/create_blog" component={CreateBlog} />
           <Route path="/control/location" component={Location} />
-          <Route path="/" exact component={Home} />
+          <Route path="/blog/edit/:id" component={Edit} />
         </Switch>
       </React.Fragment>
      </AuthProvider> 

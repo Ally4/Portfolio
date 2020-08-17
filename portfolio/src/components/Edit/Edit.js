@@ -1,17 +1,32 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment} from "react";
 import NavbarAdmin from "../NavbarAdmin/NavbarAdmin";
 import Footer from "../Footer/Footer";
 import app from "../../config/fire";
-import "./CreateBlog.css";
+import "./Edit.css";
 
 const db = app.firestore();
 
-class CreateBlog extends Component {
+class Edit extends Component {
   state = {
     picture: "",
     title: "",
-    script: "",
-  };
+    script: ""
+  }
+
+
+  componentDidMount() {
+    const {id} = this.props.match.params
+    db.collection("Blogs").doc(id).get().then((doc) => {
+        if (doc.exists) {
+          this.setState({title: doc.data().title, picture: doc.data().picture, script: doc.data().script});
+            console.log("Document data:", doc.data());
+        } else {
+            console.log("No such document!");
+        }
+    }).catch(function(error) {
+        console.log("Error getting document:", error);
+    });
+  }
 
   handleChange = (event) => {
     const name = event.target.name;
@@ -19,17 +34,17 @@ class CreateBlog extends Component {
     this.setState({ [name]: value });
   };
 
-  recordBlog = (event) => {
+  editBlog = (event) => {
     event.preventDefault();
-    db.collection("Blogs")
-      .add({
-        picture: this.state.picture,
-        title: this.state.title,
-        script: this.state.script,
-      })
-      .then((doc) => alert("Your blog is saved"))
-      .catch((err) => console.log(err));
-    this.setState({ picture: "", title: "", script: "" });
+    db.collection("Blogs").doc(this.props.match.params.id).update(this.state)
+    .then(() => {
+      alert("Blog successfully updated");
+      this.props.history.push("/admin_blogs");
+    })
+    .catch(error => {
+        console.error("Error updating document: ", error);
+    });
+    console.log(this.state);
   };
 
   render() {
@@ -40,7 +55,7 @@ class CreateBlog extends Component {
           <div className="create_blog">
             <div className="container_create" id="create">
               <div className="create">
-                <div className="head1">Create blog</div>
+                <div className="head1">Edit blog</div>
               </div>
               <div className="subcontent_create">
                 <div className="forms-create">
@@ -76,9 +91,8 @@ class CreateBlog extends Component {
                     <button
                       className="submit"
                       value="submit"
-                      onClick={this.recordBlog}
-                    >
-                      Submit
+                      onClick={this.editBlog}
+                    >Update                     
                     </button>
                   </form>
                   <div>
@@ -95,4 +109,4 @@ class CreateBlog extends Component {
   }
 }
 
-export default CreateBlog;
+export default Edit;
