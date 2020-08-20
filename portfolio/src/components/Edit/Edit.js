@@ -59,8 +59,8 @@ class Edit extends Component {
               </div>
               <div className="subcontent_create">
                 <div className="forms-create">
-                  <form>
-                    <input
+                  <form>                    
+                  <label className="edit_info">Picture<span className="edit_info_picture">(Put a link)</span></label><input
                       value={this.state.picture}
                       type="text"
                       name="picture"
@@ -69,7 +69,7 @@ class Edit extends Component {
                       placeholder="Picture"
                       required
                     />
-                    <input
+                    <label className="edit_info">Title</label><input
                       value={this.state.title}
                       type="text"
                       name="title"
@@ -78,7 +78,7 @@ class Edit extends Component {
                       placeholder="Title"
                       required
                     />
-                    <textarea
+                    <label className="edit_info">Text</label><textarea
                       value={this.state.script}
                       type="text"
                       id="create"

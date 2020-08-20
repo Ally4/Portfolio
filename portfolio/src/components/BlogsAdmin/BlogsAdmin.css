@@ -38,10 +38,11 @@ body{
   text-align: center;
 }
 
-.arrange{
+.arrange_admin{
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .log > .head1{

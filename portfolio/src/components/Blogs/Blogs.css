@@ -70,10 +70,12 @@ body{
   text-align: center;
 }
 
-.arrange{
+
+.arrange_user{
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
  .head1{

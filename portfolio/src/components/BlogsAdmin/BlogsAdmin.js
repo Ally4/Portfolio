@@ -12,15 +12,16 @@ class BlogsAdmin extends Component {
   };
 
   componentDidMount() {
-    const fetchedPersons = [];
+    const fetchedPosts = [];
     db.collection("Blogs")
       .get()
-      .then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          fetchedPersons.push({ id: doc.id, data: doc.data() });
+      .then( async (querySnapshot) => {
+     await querySnapshot.forEach((doc) => {
+          fetchedPosts.push({ id: doc.id, data: doc.data() });
         });
-      });
-    this.setState({ posts: fetchedPersons });
+        console.log(`The console ${fetchedPosts[4]}`);
+        this.setState({ posts: fetchedPosts });
+      })
   }
 
   render() {
@@ -33,7 +34,7 @@ class BlogsAdmin extends Component {
           <div className="head2">Blogs</div>
         </div>
         <div className="smallIntroBlog">Here are Ally`s blogs</div>
-        <div className="arrange">
+        <div className="arrange_admin">
           {this.state.posts.map((iterate) => (
             <BlogAdmin
               key={iterate.id}

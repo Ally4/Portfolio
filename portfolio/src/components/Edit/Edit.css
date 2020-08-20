@@ -93,6 +93,18 @@ body{
   cursor: pointer;
 }
 
+.edit_info{
+color: white;
+font-size: 1.5em;
+font-weight: bold;
+}
+
+.edit_info_picture{
+color: white;
+font-size: .7em;
+font-weight:normal;
+}
+
 @media screen and (max-width:320px){
   body{
     overflow-x: hidden;
