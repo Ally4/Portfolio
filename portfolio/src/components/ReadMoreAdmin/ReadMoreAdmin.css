@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    border: 0px;
+  }
+  body{
+    background-color: black;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  
+  .head1{
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  
+  .contact, .head1{
+    color: white;
+    text-align: center;
+  }
+  
+  .forms-create{
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    justify-content: center;
+  }
+  
+  .forms-create > form input[type=text]#create, form input[type=email]#create{
+    height: 30px;
+    width: 100%;
+    margin: 5px;
+    color: black;
+    font-weight: bold;    
+    border-radius: .5em;    
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .forms-create > form textarea{
+    height: 300px;
+    width: 100%;
+    margin: 5px;
+    color: black;
+    font-weight: bold;    
+    border-radius: .5em;   
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .forms-create{
+    flex: 1;
+    text-align: center;
+  }
+  
+  .forms-create .send{
+    background-color: #F3C00A;
+    color: black;
+    font-weight: bolder;    
+    border-radius: .5em;  
+    margin-top: 20px;
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+  }
+  
+  .log > .head1{
+    color: #F3C00A;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .main {
+    display: grid;
+  }
+  
+  .create_blog {
+    width: 100%;
+    display: grid;
+    padding-top: 20px;
+  }
+  
+  /* .container_create {
+    background-color: #f3c10a31;
+    width:95%;
+    border-radius: .5em;
+    margin-left: 2.5%;
+  } */
+  
+  .submit{
+    background-color: #F3C00A;
+    color: black;
+    font-weight: bolder;    
+    border-radius: .5em;  
+    margin-top: 20px;
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width:320px){
+    body{
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  
+    .containerEducation > .Education > .head1{
+      margin-left: 30px;
+    }
+    
+    .containerSkills-Resume > .Skills-Resume > .head1 {
+      margin-left: 35px;
+    }
+  }
+  
+  
+  @media screen and (max-width:375px) {
+   body{
+    overflow-x: hidden;
+   }
+   
+    .Skills-Resume > .head1{
+      font-size: 40px;  
+    }
+  
+    .project > .head1, .smallIntroProject {
+      margin-left: -40px;  
+    }
+  
+    .project > .head1{
+      font-size: 40px;  
+    }
+  
+    .resume > .head1{
+      font-size: 40px;  
+    }
+    
+    .containerEducation > .Education > .head1{
+      margin-left: 30px;
+    }
+  
+    .containerSkills-Resume > .Skills-Resume > .head1 {
+      margin-left: 10px;
+    }
+  }
+  
+  @media screen and (max-width:600px){
+    
+    .containerEducation > .Education > .head1{
+      margin-left: 30px;
+    }
+  
+    .containerSkills-Resume > .Skills-Resume > .head1 {
+      margin-left: 10px;
+    }
+  }
+  
+  @media screen and (max-width:900px){
+     .containerEducation > .Education > .head1{
+      margin-left: 30px;
+    }
+  
+    .containerSkills-Resume > .Skills-Resume > .head1 {
+      margin-left: 10px;
+    } 
+  }
+  
+  @media screen and (max-width:1200px){
+    .containerEducation > .Education > .head1{
+      margin-left: 30px;
+    }
+    .containerSkills-Resume > .Skills-Resume > .head1 {
+      margin-left: 10px;
+    }
+  }
+  
+  @media screen and (max-width:414px) {
+    body{
+     overflow-x: hidden;
+    }
+  
+     .Skills-Resume > .head1{
+       font-size: 40px;  
+     }
+  
+     .project > .head1, .smallIntroProject {
+       margin-left: 20px;  
+     }
+   
+     .project > .head1{
+       font-size: 40px;  
+     }
+   
+    
+     .resume > .head1{
+       font-size: 40px;  
+     }
+   
+     .containerEducation > .Education > .head1{
+       margin-left: 30px;
+     }
+   
+     .containerSkills-Resume > .Skills-Resume > .head1 {
+       margin-left: 10px;
+     }
+  
+     .forms-create{
+      width: 60%;
+     }
+   }
+  
+  @media screen and (max-width: 360px) {
+    .containerSkills-Resume > .Skills-Resume > .head1{
+      width: 80%;
+      margin-left: 10px;
+    }
+  }
+  

@@ -13,6 +13,8 @@ import Login from "./components/Login/LogIn";
 import CreateBlog from "./components/CreateBlog/CreateBlog";
 import Location from "./components/Location/Location";
 import Edit from "./components/Edit/Edit";
+import ReadMore from "./components/ReadMore/ReadMore";
+import ReadMoreAdmin from "./components/ReadMoreAdmin/ReadMoreAdmin";
 import "./App.css";
 import { AuthProvider } from "./Auth";
 import PrivateRoute from "./PrivateRoute";
@@ -37,6 +39,8 @@ class App extends Component {
           <Route path="/create_blog" component={CreateBlog} />
           <Route path="/control/location" component={Location} />
           <Route path="/blog/edit/:id" component={Edit} />
+          <Route path="/blog/read/:id" component={ReadMore} />
+          <Route path="/blog/read_admin/:id" component={ReadMoreAdmin} />
         </Switch>
       </React.Fragment>
      </AuthProvider> 

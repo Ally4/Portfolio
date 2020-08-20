@@ -1,6 +1,7 @@
 import React from "react";
 import "./BlogAdmin.css";
 import Change from "../Buttons/Buttons";
+import ReadAdmin from "../ReadAdmin/ReadAdmin";
 
 const Blog = (props) => {
   return (
@@ -14,7 +15,10 @@ const Blog = (props) => {
         <p className="title">{props.title}</p>
         <p className="script">{props.script}</p>
       </div>
+      <div className="three_buttons">
       <Change id={props.id}/>
+      <ReadAdmin id={props.id}/>
+      </div>
     </div>
   );
 };

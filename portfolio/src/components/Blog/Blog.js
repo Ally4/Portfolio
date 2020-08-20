@@ -1,6 +1,6 @@
 import React from 'react';
+import Read from '../Read/Read';
 import "./Blog.css";
-import blogPicture from "../../pictures/6a01157041f4e3970b01b7c82eb758970b-320wi.png";
 
 const Blog = (props) => {
     return (
@@ -12,10 +12,14 @@ const Blog = (props) => {
         alt="project"
       />
             <p className="title">{props.title}</p>  
-            <p className="script">{props.script}</p> 
+            <p className="script" id="script" >{props.script}</p> 
+            <Read id={props.id}/>
             </div>
         </div>
     )
 }
 
 export default Blog;
+
+
+

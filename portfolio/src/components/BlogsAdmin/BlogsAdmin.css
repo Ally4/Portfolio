@@ -40,8 +40,8 @@ body{
 
 .arrange{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .log > .head1{
