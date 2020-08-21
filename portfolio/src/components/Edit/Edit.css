@@ -93,6 +93,21 @@ body{
   cursor: pointer;
 }
 
+.back{
+  background-color: #57af0e;
+  color: black;
+  font-weight: bolder;    
+  border-radius: .5em;  
+  margin-top: 20px;
+  padding: 10px 25px 10px 25px;
+  cursor: pointer;
+}
+
+.separate_buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
 .edit_info{
 color: white;
 font-size: 1.5em;

@@ -34,6 +34,11 @@ class Edit extends Component {
     this.setState({ [name]: value });
   };
 
+  back = (event) => {
+    event.preventDefault();
+    this.props.history.push("/admin_blogs");
+  };
+
   editBlog = (event) => {
     event.preventDefault();
     db.collection("Blogs").doc(this.props.match.params.id).update(this.state)
@@ -87,13 +92,20 @@ class Edit extends Component {
                       placeholder="Write the blog"
                       required
                     />
-                    <br />
+                    <div className="separate_buttons">
                     <button
                       className="submit"
                       value="submit"
                       onClick={this.editBlog}
                     >Update                     
                     </button>
+                    <button
+                      className="back"
+                      value="submit"
+                      onClick={this.back}
+                    >Cancel                     
+                    </button>
+                    </div>
                   </form>
                   <div>
                     <p></p>
