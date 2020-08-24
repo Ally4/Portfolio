@@ -25,7 +25,6 @@ class BlogsAdmin extends Component {
   }
 
   render() {
-    console.log(this.state.posts);
     return (
       <div>
         <NavbarAdmin />

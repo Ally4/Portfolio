@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import fire from "./config/fire";
 import Home from "./components/Home/Home";
 import HomeAdmin from "./components/HomeAdmin/HomeAdmin";
 import Education from "./components/Education/Education";
@@ -15,6 +14,7 @@ import Location from "./components/Location/Location";
 import Edit from "./components/Edit/Edit";
 import ReadMore from "./components/ReadMore/ReadMore";
 import ReadMoreAdmin from "./components/ReadMoreAdmin/ReadMoreAdmin";
+import Query from "./components/Queries/Queries";
 import "./App.css";
 import { AuthProvider } from "./Auth";
 import PrivateRoute from "./PrivateRoute";
@@ -39,8 +39,9 @@ class App extends Component {
           <Route path="/create_blog" component={CreateBlog} />
           <Route path="/control/location" component={Location} />
           <Route path="/blog/edit/:id" component={Edit} />
-          <Route path="/blog/read/:id" component={ReadMore} />
-          <Route path="/blog/read_admin/:id" component={ReadMoreAdmin} />
+          <Route path="/blog/read/:id" exact component={ReadMore} />
+          <Route path="/blog/read_admin/:id" exact component={ReadMoreAdmin} />
+          <Route path="/queries" exact component={Query} />
         </Switch>
       </React.Fragment>
      </AuthProvider> 

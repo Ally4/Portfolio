@@ -1,9 +1,7 @@
-import React, { Component, useState } from "react";
-import {Link} from 'react-router-dom';
-import fire from "../../config/fire";
+import React from "react";
+import { Link } from 'react-router-dom';
 import "./Read.css";
 
-const db = fire.firestore();
 
 const Read = (blog) => {
   return (

@@ -49,7 +49,7 @@ class ReadMore extends Component {
             <div className="container_create_user" id="create_user">
               <div className="subcontent_create_user">
                 <div className="forms-create_user">
-                  <img src={this.state.title} alt="blog-image"></img>
+                  <img src={this.state.title} alt="blog"></img>
                   <h1>{this.state.title}</h1>
                   <p>{this.state.script}</p>
                   <br />
