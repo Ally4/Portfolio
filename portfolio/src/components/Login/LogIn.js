@@ -65,7 +65,7 @@ const Login = ({ history }) => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="footer_login"><Footer /></div>
     </div>
   );
 };

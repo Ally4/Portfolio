@@ -1,7 +1,10 @@
 import React, { Component, Fragment } from "react";
 import NavbarAdmin from "../NavbarAdmin/NavbarAdmin";
 import Footer from "../Footer/Footer";
+import app from "../../config/fire";
 import "./CreateBlog.css";
+
+const db = app.firestore();
 
 class CreateBlog extends Component {
   state = {
@@ -9,6 +12,14 @@ class CreateBlog extends Component {
     text: "",
     blogs: {},
   };
+
+  componentDidMount() {
+    db.collection("Blogs").get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+          console.log(`${doc.id} => ${doc.data()}`);
+      });
+  });
+  }
 
   handleChangeTitle = (event) => {
     event.preventDefault();
@@ -26,23 +37,21 @@ class CreateBlog extends Component {
 
   recordBlog = (event) => {
     event.preventDefault();
-    const newBlog = {
-      title: this.state.title,
-      text: this.state.text,
-    };
-    this.setState({
-      blogs: newBlog,
-      title: "",
-      text: "",
-    });
+db.collection("Blogs").add({
+  Title: this.state.title,
+Writting: this.state.text
+}).then(doc => console.log(doc)).catch(err => console.log(err));
+
   };
 
 
 
   render() {
+   
     return (
       <Fragment>
       <NavbarAdmin />
+      <div className="main">
       <div className="create_blog">
         <div className="container_create" id="create">
           <div className="create">
@@ -80,6 +89,7 @@ class CreateBlog extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
       <Footer />
       </Fragment>

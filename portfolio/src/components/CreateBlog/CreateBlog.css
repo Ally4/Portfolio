@@ -66,17 +66,21 @@ body{
   font-size: 30px;
 }
 
+.main {
+  display: grid;
+}
+
 .create_blog {
   width: 100%;
   display: grid;
-  justify-content: center;
   padding-top: 20px;
 }
 
 .container_create {
-  justify-content: center;
   background-color: #f3c10a31;
+  width:95%;
   border-radius: .5em;
+  margin-left: 2.5%;
 }
 
 .submit{
