@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar/Navbar";
 import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";
 import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
-import contact from "../pictures/contact.jpg";
 
 
 class Log extends Component {
@@ -29,10 +29,12 @@ class Log extends Component {
 
   render() {
     return (
+      <div>
+      <Navbar />
       <div className="Log">
       <div className="containerLog" id="log">
       <div className="log">
-        <div className="head1">Admin log</div>
+        <div className="head1" id="login">Admin log</div>
       </div>
       <div className="subcontentLog">
         <div className="forms-create">
@@ -64,9 +66,6 @@ class Log extends Component {
         </div>
       </div>
     </div>
-
-
-
 <div className="footer">
 <div className="btn1" id="buttons">
   <Link
@@ -86,6 +85,7 @@ class Log extends Component {
     <img src={facebookLogo} alt="logo-facebook" id="logo"></img>
     Facebook
   </Link>
+  </div>
 </div>
 </div>
 </div>

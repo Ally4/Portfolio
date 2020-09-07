@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar/Navbar";
 import facebookLogo from "../pictures/iconmonstr-facebook-2-240.png";
 import twitterLogo from "../pictures/iconmonstr-twitter-2-240.png";
 import sell from "../pictures/sell.jpg";
@@ -20,6 +21,7 @@ class SkillsResume extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <div className="containerSkills-Resume" id="resume">
           <div className="Skills-Resume">
             <div className="head1">Skills and Resume</div>
