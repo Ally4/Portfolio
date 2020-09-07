@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import {Link} from 'react-router-dom';
 import fire from "../../config/fire";
 import "./Buttons.css";

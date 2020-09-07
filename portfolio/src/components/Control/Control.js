@@ -13,11 +13,9 @@ class Control extends Component {
         <div className="control_panel">
           <div className="control_list">
             <ul>
-              <li>
-                <Link to="/control/location">Location</Link>
-              </li>
+              <li>Location</li>
+              <li><Link to="/queries" >Queries</Link></li>
               <li>Profile</li>
-              <li>Queries</li>
             </ul>
           </div>
           <div className="control_items">

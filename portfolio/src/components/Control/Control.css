@@ -9,10 +9,9 @@
     text-decoration: none;
     list-style-type: none;
     color: white;
-    border-bottom: 2px solid #F3C00A;
 }
 
 .control_items{
     flex: 3;
-    background: rgb(118, 124, 109);
+    background: rgba(155, 156, 152, 0.486);
 }
