@@ -1,0 +1,37 @@
+.btn1{
+    height: 10px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+  
+  .btn2{
+    height: 10px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+  
+  .footer{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    background-color:black;
+    color: white;
+    justify-items: center;
+    padding: 30px;
+  }
+  
+  .footer a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer img{
+    background-color: white;
+  }
+  
+  #logo{
+    height: 20px;
+    width: 20px;
+  }
+  
