@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
+import fire from "./config/fire";
 import Home from "./components/Home/Home";
 import HomeAdmin from "./components/HomeAdmin/HomeAdmin";
 import Education from "./components/Education/Education";
@@ -10,15 +11,21 @@ import Contact from "./components/Contact/Contact";
 import Control from "./components/Control/Control";
 import Login from "./components/Login/LogIn";
 import CreateBlog from "./components/CreateBlog/CreateBlog";
+import Location from "./components/Location/Location";
 import "./App.css";
+import { AuthProvider } from "./Auth";
+import PrivateRoute from "./PrivateRoute";
 
 class App extends Component {
+
   render() {
     return (
+      <AuthProvider>
       <React.Fragment>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/admin" component={HomeAdmin} />
+          <PrivateRoute path="/admin" component={HomeAdmin} /> 
+          <Route path="/admin" component={HomeAdmin} /> 
           <Route path="/education" component={Education} />
           <Route path="/skills&resume&projects" component={SkillsResume} />
           <Route path="/blogs" component={Blogs} />
@@ -27,9 +34,11 @@ class App extends Component {
           <Route path="/control" component={Control} />
           <Route path="/login" component={Login} />
           <Route path="/create_blog" component={CreateBlog} />
+          <Route path="/control/location" component={Location} />
           <Route path="/" exact component={Home} />
         </Switch>
       </React.Fragment>
+     </AuthProvider> 
     );
   }
 }

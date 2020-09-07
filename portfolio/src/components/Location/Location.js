@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import "./Control.css";
-import { Link } from 'react-router-dom';
 import NavbarAdmin from "../NavbarAdmin/NavbarAdmin";
-import Footer from "../Footer/Footer";
-import Map_Location from "../Map_Location/Map_Location";
+import Map_location from "../Map_Location/Map_Location";
+import Footer from "../NavbarAdmin/NavbarAdmin";
 
-class Control extends Component {
+class Location extends Component {
   render() {
     return (
       <div>
@@ -13,15 +11,13 @@ class Control extends Component {
         <div className="control_panel">
           <div className="control_list">
             <ul>
-              <li>
-                <Link to="/control/location">Location</Link>
-              </li>
+              <li>Location</li>
               <li>Profile</li>
               <li>Queries</li>
             </ul>
           </div>
           <div className="control_items">
-              <Map_Location />
+              <Map_location />
           </div>
         </div>
         <Footer />
@@ -30,4 +26,4 @@ class Control extends Component {
   }
 }
 
-export default Control;
+export default Location;

@@ -1,72 +1,73 @@
-import React, { Component } from "react";
+import React, { Component, useCallback, useContext } from "react";
+import { withRouter, Redirect } from "react-router";
+import app from "../../config/fire";
+import { AuthContext } from "../../Auth";
 import "./Login.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
-class Log extends Component {
-  state = {
-    email: "",
-    password: "",
-  };
+const Login = ({ history }) => {
+  const handleLogin = useCallback(
+    async (event) => {
+      event.preventDefault();
+      const { email, password } = event.target.elements;
+      try {
+        await app
+          .auth()
+          .signInWithEmailAndPassword(email.value, password.value);
+        history.push("/admin");
+      } catch (error) {
+        alert(error);
+      }
+    },
+    [history]
+  );
 
-  handleChangeEmail = (event) => {
-    event.preventDefault();
-    this.setState({
-      email: event.target.value,
-    });
-  };
+  const { currentUser } = useContext(AuthContext);
 
-  handleChangePassword = (event) => {
-    event.preventDefault();
-    this.setState({
-      password: event.target.value,
-    });
-  };
+  if (currentUser) {
+    return <Redirect to="/admin" />;
+  }
 
-  render() {
-    return (
-      <div>
-        <Navbar />
-        <div className="Log">
-          <div className="containerLog" id="log">
-            <div className="log">
-              <div className="head1" id="login">
-                Admin log
-              </div>
-            </div>
-            <div className="subcontentLog">
-              <div className="forms-create">
-                <form>
-                  <input
-                    value={this.state.email}
-                    onChange={this.handleChangeEmail}
-                    type="email"
-                    id="create"
-                    placeholder="Email"
-                    required
-                  />
-                  <input
-                    value={this.state.password}
-                    onChange={this.handleChangePassword}
-                    type="password"
-                    id="create"
-                    placeholder="Password"
-                    required
-                  />
-                  <br />
-                  <button className="send" value="submit">
-                    Log In
-                  </button>
-                </form>
-                <div></div>
-              </div>
+  return (
+    <div>
+      <Navbar />
+      <div className="Log">
+        <div className="containerLog" id="log">
+          <div className="log">
+            <div className="head1" id="login">
+              Admin log
             </div>
           </div>
-          <Footer />
+          <div className="subcontentLog">
+            <div className="forms-create">
+            <form onSubmit={handleLogin}>
+              <input
+                name="email"
+                type="email"
+                id="create"
+                placeholder="Email"
+                required
+              />
+              <input
+                name="password"
+                type="password"
+                id="create"
+                placeholder="Password"
+                required
+              />
+              <br />
+              <button className="send" value="submit">
+                Log In
+              </button>
+            </form>
+            </div>
+          </div>
         </div>
       </div>
-    );
-  }
-}
+      <Footer />
+    </div>
+  );
+};
 
-export default Log;
+export default Login;
