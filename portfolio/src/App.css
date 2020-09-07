@@ -625,11 +625,6 @@ body{
   padding-left: 50px;  
 }
 
-
-
-
-
-
 .forms-create{
   max-width: 700px;
   margin: auto;
@@ -656,7 +651,6 @@ body{
   border-radius: .5em;   
   box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.4);
 }
-    
 
 .subcontentContact{
   display: flex;
@@ -679,6 +673,7 @@ body{
   border-radius: .5em;  
   margin-top: 20px;
   padding: 10px 25px 10px 25px;
+  cursor: pointer;
 }
 
 .imageContact #imageContact { 
@@ -703,6 +698,25 @@ body{
 
 .title{
   font-weight: bolder;
+}
+
+.Log{
+  display: grid;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.containerLog{
+  height: 0 auto;
+  background-color: #f3c10a31;
+  border-radius: .5em;
+  margin-left: 25px;
+}
+
+.log, .head1{
+  color: #F3C00A;
+  text-align: center;
+  font-size: 30px;
 }
 
 @media screen and (max-width:320px){
@@ -832,9 +846,6 @@ body{
     margin-left: -100px;
   }
 
-
-
-
   .Skills-Resume > .head1{
     font-size: 40px;  
   }
@@ -842,10 +853,6 @@ body{
   .containerSkills-Resume > .smallIntroSkills-Resume {
     font-size: 20px;  
   }
-
-
-
-
 
   .project > .head1, .smallIntroProject {
     margin-left: -40px;  
@@ -859,8 +866,6 @@ body{
     font-size: 10px;  
   }
 
-
-
   .resume > .head1{
     font-size: 40px;  
   }
@@ -868,14 +873,6 @@ body{
   .resume >.smallIntroResume {
     font-size: 10px;  
   }
-
-
-
-
-
-
-
-
 
   .subcontentContact .imageContact{
     display: none;
@@ -1029,8 +1026,6 @@ body{
 }
 
 @media screen and (max-width:900px){
-
-
   .subcontentContact .imageContact{
     display: none;
   }
@@ -1103,8 +1098,6 @@ body{
     margin-left: 10px;
   }
 }
-
-
 
 @media screen and (max-width:1200px){
 
@@ -1180,14 +1173,6 @@ body{
     margin-left: 25px;
   }
 }
-
-
-
-
-
-
-
-
 
 @media screen and (max-width:414px) {
   body{
@@ -1332,12 +1317,9 @@ body{
     width: 60%;
    }
 
-
-
    .arrange{
      margin-left: 30px;
   }
-
 
    .containerContact{
     height: 0 auto;
@@ -1367,8 +1349,6 @@ body{
     margin-left: -120px;
   }
 }
-
-
 
 @media screen and (max-width: 360px) {
   .Educations > .Education1 > .pictureEducation {
@@ -1402,11 +1382,6 @@ body{
   .containerProject > .projects > .project1 > .projectResume {
     margin-left: 50px;
   }
-
-
-
-
-
 
   .containerResume{
     margin-left: 60px;
@@ -1458,10 +1433,6 @@ body{
     margin-left: 60px;
   }
 
-
-
-
-
   .containerResume > .resumes{
     margin-left: -50px;
   }
@@ -1469,9 +1440,11 @@ body{
   .containerResume > .resumes > .resume1 > .resumePicture{
     margin-left: -50px;
   }
+
   .containerResume > .resumes > .resume1 > .yearResume {
     margin-left: 5px;
   }
+
   .containerResume > .resumes > .resume1 > .bodyResume {
     margin-left: 60px;
     width: 60%;

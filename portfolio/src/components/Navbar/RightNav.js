@@ -42,7 +42,7 @@ const RightNav = ({ open }) => {
       <li><Link to="/skills&resume&projects">SKILLS&RESUME</Link></li>
       <li><Link to="/blogs">BLOG</Link></li>
       <li><Link to="/contact">CONTACT</Link></li>
-      <li><Link to="/contact">LOG</Link></li>
+      <li><Link to="/log">LOG</Link></li>
     </Ul>
   )
 }
