@@ -1,0 +1,215 @@
+*{
+  margin: 0px;
+  border: 0px;
+}
+body{
+  background-color: black;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.btn1{
+  height: 10px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.btn2{
+  height: 10px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  background-color:black;
+  color: white;
+  justify-items: center;
+  padding: 30px;
+}
+
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer img{
+  background-color: white;
+}
+
+.blog{
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.head1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.head2{
+  font-size: 70px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.smallIntroBlog{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 2px;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+ .head1{
+  color: white;
+  text-align: center;
+}
+
+.arrange{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ .head1{
+  color: #F3C00A;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media screen and (max-width:320px){
+
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .head2 {
+    display: none;
+  }
+
+.head1 {
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width:375px) {
+ body{
+  overflow-x: hidden;
+ }
+ .head1{
+    font-size: 40px;  
+  }
+  
+  .head1{
+    margin-left: -40px;  
+  }
+
+  .head1{
+    font-size: 40px;  
+  }
+
+  .head1{
+    font-size: 40px;  
+  }
+
+  .head2 {
+    display: none;
+  }
+
+.head1{
+    margin-left: 30px;
+  }
+   .head1 {
+    margin-left: 10px;
+  }
+
+  .head2 {
+    display: none;
+  }
+
+  .head1{
+    margin-left: 30px;
+  }
+
+  .head1 {
+    margin-left: 10px;
+  }
+
+  .head2 {
+    display: none;
+  }
+
+.head1{
+    margin-left: 30px;
+  }
+
+.head1 {
+    margin-left: 10px;
+  }
+
+  .head2 {
+    display: none;
+  }
+
+.head1{
+    margin-left: 30px;
+  }
+
+  /* .Skills-Resume1{
+    margin-right: 30px;
+  } */
+.head1 {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:414px) {
+  body{
+   overflow-x: hidden;
+  }
+ .head1{
+     font-size: 40px;  
+   }
+ 
+   .head1 {
+     margin-left: 20px;  
+   }
+   
+   .head1{
+     font-size: 40px;  
+   }
+  
+  .head1{
+     font-size: 40px;  
+   }
+
+   .head2 {
+     display: none;
+   }
+
+   .head1{
+     margin-left: 30px;
+   }
+   
+   .head1 {
+     margin-left: 10px;
+   }
+ 
+   
+   .arrange{
+     margin-left: 30px;
+  }
+ }
+
+@media screen and (max-width: 360px) {
+ .head1{
+    width: 80%;
+    margin-left: 10px;
+  }
+
+}

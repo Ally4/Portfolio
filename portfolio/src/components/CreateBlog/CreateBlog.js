@@ -1,4 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+import NavbarAdmin from "../NavbarAdmin/NavbarAdmin";
+import Footer from "../Footer/Footer";
+import "./CreateBlog.css";
 
 class CreateBlog extends Component {
   state = {
@@ -38,6 +41,8 @@ class CreateBlog extends Component {
 
   render() {
     return (
+      <Fragment>
+      <NavbarAdmin />
       <div className="create_blog">
         <div className="container_create" id="create">
           <div className="create">
@@ -76,6 +81,8 @@ class CreateBlog extends Component {
           </div>
         </div>
       </div>
+      <Footer />
+      </Fragment>
     );
   }
 }

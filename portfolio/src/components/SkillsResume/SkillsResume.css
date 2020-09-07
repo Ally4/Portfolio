@@ -1,0 +1,567 @@
+*{
+  margin: 0px;
+  border: 0px;
+}
+body{
+  background-color: black;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.head1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.head2{
+  font-size: 70px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+ .containerSkills-Resume, .Skills-Resume{
+  flex: 1;
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+
+.smallIntroSkills-Resume{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 2px;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.smallIntroSkills-Resume-tech{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  padding: 2px;
+}
+
+.smallIntroSkills-Resume-lang{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  padding: 2px;
+}
+
+.lang{
+  font-size: 20px;
+}
+
+.Skills-Resumes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Skills-Resume1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 1.5em ;
+}
+
+.skill{
+  font-weight: bolder;
+  font-size: 30px;
+  color: #F3C00A;
+  margin: 0 10px;
+}
+
+.skill-lang{
+  font-weight: bolder;
+  font-size: 30px;
+  color: #F3C00A;
+  margin: 0 10px;
+  padding: 20px;
+}
+
+ .pictureResume{
+  height: 60%;
+  width: 100%;   
+}
+
+#imageResume{
+  height: 200px;
+  width: 200px;
+  border-radius: 1em;
+}
+
+.resume1{
+  display: grid;
+  align-items: center;
+}
+
+.resumes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 15px;
+}
+
+.smallIntroResume{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 2px;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.containerResume{
+  display: grid;
+  gap: 1em;
+}
+
+.containerResume, .resume{
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.yearResume{
+  justify-content: center;
+  font-weight: bolder;
+  padding-top: 30px;  
+  color: #F3C00A;
+ }
+
+ .bodyResume{
+  justify-content: center;
+  padding-top: 10px;
+ }
+
+ .containerProject{
+  display: grid;
+  gap: 1em;
+}
+
+.containerProject, .project{
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.smallIntroProject{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 2px;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 15px;
+}
+
+.project1{
+  display: grid;
+  align-items: center;
+}
+
+.pictureProject{
+  height: 60%;
+  width: 100%;  
+}
+
+#imageProject{
+  height: 200px;
+  width: 200px;
+  border-radius: 1em;
+}
+
+.projectTitle{
+  justify-content: center;
+  font-weight: bolder;
+  padding-top: 30px;  
+  color: #F3C00A;
+ }
+
+ .projectResume{
+  justify-content: center;
+  padding-top: 10px;
+ }
+
+ .containerProject a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.contact, .head1{
+  color: white;
+  text-align: center;
+}
+
+.log > .head1{
+  color: #F3C00A;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+@media screen and (max-width:320px){
+  .head2 {
+    display: none;
+  }
+
+  .Skills-Resume{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }  
+  
+  .smallIntroSkills-Resume{
+    padding: 20px;
+  }
+
+  .smallIntroSkills-Resume-lang {
+    padding: 20px;
+  }
+
+  .Skills-Resumes{
+    text-align: center;
+  }
+
+  .Skills-Resume1{
+    padding: 20px;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin: 35px;
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume-tech {
+    margin-left: 50px;
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume-lang {
+    margin: 50px;
+  }
+
+  .containerProject {
+    margin-left: 50px;
+  }
+
+  .containerResume {
+    margin-left: 50px;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+
+  .containerProject > .projects > .project1 > .pictureProject{
+    margin-left: 50px;
+  }
+
+  .containerProject > .projects > .project1 > .projectTitle {
+    margin-left: 50px;
+  }
+
+  .containerProject > .projects > .project1 > .projectResume {
+    margin-left: 50px;
+  }
+
+  .containerResume{
+    margin-left: 60px;
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume {
+    width: 80%;
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume-tech {
+    font-size: 40px;
+    margin-left: -20px;
+  }
+  
+  .containerSkills-Resume > .Skills-Resume > .head1{
+    width: 80%;
+    margin-left: 10px;
+  }
+
+  .containerResume > .resume {
+    font-size: 20px;
+    margin-left: -40px;
+    width: 90%;
+  }
+
+  .containerResume > .smallIntroResume {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .containerResume > .smallIntroSkills-Resume-lang {
+    width: 80%;
+  }
+
+  .containerResume > .Skills-Resumes > .Skills-Resume1{
+    width: 60%;
+  }
+
+  .containerResume > .resumes > .resume1 > .resumePicture{
+    margin-left: -50px;
+  }
+
+  .containerResume > .resumes > .resume1 > .yearResume {
+    margin-left: 5px;
+  }
+
+  .containerResume > .resumes > .resume1 > .bodyResume {
+    margin-left: 60px;
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-width:375px) {
+   .containerSkills-Resume{    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerProject > .projects > .project1 {
+    margin-left: -100px;
+  }
+
+  .Skills-Resume > .head1{
+    font-size: 40px;  
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume {
+    font-size: 20px;  
+  }
+
+  .project > .head1, .smallIntroProject {
+    margin-left: -40px;  
+  }
+
+  .project > .head1{
+    font-size: 40px;  
+  }
+
+  .project >.smallIntroProject {
+    font-size: 10px;  
+  }
+
+  .resume > .head1{
+    font-size: 40px;  
+  }
+
+  .resume >.smallIntroResume {
+    font-size: 10px;  
+  }
+
+  .head2 {
+    display: none;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerProject {
+    margin-right: 200px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume{
+    margin-left: 20px;
+  }
+  .containerSkills-Resume > .smallIntroSkills-Resume-tech {
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resumes > .Skills-Resume1 > .skill {
+    margin-left: -5px;
+  }
+
+  .containerResume {
+    margin-left: 35px;
+  }
+}
+
+
+@media screen and (max-width:414px) {
+  .containerSkills-Resume{    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerProject > .projects > .project1 {
+    margin-left: -100px;
+  } 
+
+  .Skills-Resume > .head1{
+    font-size: 40px;  
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume {
+    font-size: 20px;  
+  } 
+
+  .project > .head1, .smallIntroProject {
+    margin-left: 20px;  
+  }
+
+  .project > .head1{
+    font-size: 40px;  
+  }
+
+  .project >.smallIntroProject {
+    font-size: 10px;  
+  }
+  
+  .resume > .head1{
+    font-size: 40px;  
+  }
+
+  .resume >.smallIntroResume {
+    font-size: 10px;  
+  } 
+
+  .head2 {
+    display: none;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume{
+    margin-left: 20px;
+  }
+  .containerSkills-Resume > .smallIntroSkills-Resume-tech {
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resumes > .Skills-Resume1 > .skill {
+    margin-left: -5px;
+  }
+
+  .containerResume {
+    margin-left: 35px;
+  }
+}
+
+
+@media screen and (max-width:600px){
+  .head2 {
+    display: none;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume{
+    margin-left: 20px;
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume-tech {
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resumes > .Skills-Resume1 > .skill {
+    margin-left: -5px;
+  }
+
+  .containerResume {
+    margin-left: 35px;
+  }
+}
+
+
+@media screen and (max-width:900px){
+  .head2 {
+    display: none;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume{
+    margin-left: 20px;
+  }
+  .containerSkills-Resume > .smallIntroSkills-Resume-tech {
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resumes > .Skills-Resume1 > .skill {
+    margin-left: 20px;
+  }
+
+  .containerProject > .projects {
+    margin-left: 30px;
+  }
+
+  .containerResume {
+    margin-left: 35px;
+  }
+}
+
+
+@media screen and (max-width:1200px){
+  .head2 {
+    display: none;
+  }
+  
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+
+  .containerSkills-Resume > .smallIntroSkills-Resume{
+    margin-left: 20px;
+  }
+  .containerSkills-Resume > .smallIntroSkills-Resume-tech {
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resumes > .Skills-Resume1 > .skill {
+    margin-left: 20px;
+  }
+
+  .containerProject > .projects {
+    margin-left: 5px;
+  }
+
+  .containerResume {
+    margin-left: 35px;
+  }
+}

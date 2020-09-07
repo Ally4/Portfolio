@@ -1,0 +1,278 @@
+*{
+  margin: 0px;
+  border: 0px;
+}
+body{
+  background-color: black;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.email{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em 0em 0em 1em;
+}
+
+.email2{
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.head1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.containerContact{
+  height: 0 auto;
+  width: 95%;
+  background-color: rgb(34, 32, 32);
+  border-radius: .5em;
+  margin-left: 25px;
+}
+
+.contact, .head1{
+  color: white;
+  text-align: center;
+}
+
+.smallIntroContact{
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 30px;
+  padding: 2px;
+}
+
+.forms-create{
+  max-width: 700px;
+  margin: auto;
+  padding: 40px;
+  justify-content: center;
+}
+
+.forms-create > form input[type=text]#create, form input[type=email]#create{
+  height: 30px;
+  width: 100%;
+  margin: 5px;
+  color: black;
+  font-weight: bold;    
+  border-radius: .5em;    
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.forms-create > form textarea{
+  height: 300px;
+  width: 100%;
+  margin: 5px;
+  color: black;
+  font-weight: bold;    
+  border-radius: .5em;   
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.subcontentContact{
+  display: flex;
+  flex: 2;
+  height: 535px;
+  background-color: #e0efff;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+.forms-create{
+  flex: 1;
+  text-align: center;
+}
+
+.forms-create .send{
+  background-color: #F3C00A;
+  color: black;
+  font-weight: bolder;    
+  border-radius: .5em;  
+  margin-top: 20px;
+  padding: 10px 25px 10px 25px;
+  cursor: pointer;
+}
+
+.imageContact #imageContact { 
+  flex: 1; 
+  height: 100%;
+  width: 600px;
+}
+
+.log > .head1{
+  color: #F3C00A;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+@media screen and (max-width:320px){
+  .subcontentContact .imageContact{
+    display: none;
+  }
+  
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 35px;
+  }
+
+  .containerContact {
+    margin-left: 45px;
+  }
+}
+
+
+@media screen and (max-width:375px) {
+  .Skills-Resume > .head1{
+    font-size: 40px;  
+  }
+
+  .project > .head1, .smallIntroProject {
+    margin-left: -40px;  
+  }
+
+  .project > .head1{
+    font-size: 40px;  
+  }
+
+  .resume > .head1{
+    font-size: 40px;  
+  }
+
+  .subcontentContact .imageContact{
+    display: none;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+
+  .containerContact {
+    margin-left: 10px;
+  }
+}
+
+
+@media screen and (max-width:600px){
+  .subcontentContact .imageContact{
+    display: none;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+
+  .containerContact {
+    margin-left: 10px;
+  }
+}
+
+
+@media screen and (max-width:900px){
+  .subcontentContact .imageContact{
+    display: none;
+  }
+
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+
+  .containerContact {
+    margin-left: 10px;
+  }
+}
+
+
+@media screen and (max-width:1200px){
+  .subcontentContact .imageContact{
+    display: none;
+  }
+ 
+  .containerEducation > .Education > .head1{
+    margin-left: 30px;
+  }
+
+  .containerSkills-Resume > .Skills-Resume > .head1 {
+    margin-left: 10px;
+  }
+
+}
+
+
+@media screen and (max-width:414px) { 
+   .Skills-Resume > .head1{
+     font-size: 40px;  
+   } 
+   .project > .head1, .smallIntroProject {
+     margin-left: 20px;  
+   }
+ 
+   .project > .head1{
+     font-size: 40px;  
+   }
+   
+   .resume > .head1{
+     font-size: 40px;  
+   }
+ 
+   .subcontentContact .imageContact{
+     display: none;
+   }
+
+   .containerEducation > .Education > .head1{
+     margin-left: 30px;
+   }
+
+   .containerSkills-Resume > .Skills-Resume > .head1 {
+     margin-left: 10px;
+   }
+ 
+
+
+   .forms-create{
+    width: 60%;
+   }
+
+   .containerContact{
+    height: 0 auto;
+    width: 90%;
+    background-color: rgb(34, 32, 32);
+    border-radius: .5em;
+    /* margin-left: 25px; */
+  }
+ }
+
+
+@media screen and (max-width: 768px) {
+  .containerContact{
+    height: 0 auto;
+    width: 90%;
+    background-color: rgb(34, 32, 32);
+    border-radius: .5em;
+    /* margin-left: 25px; */
+  }
+}
+
+
+@media screen and (max-width: 360px) {  
+  .containerSkills-Resume > .Skills-Resume > .head1{
+    width: 80%;
+    margin-left: 10px;
+  } 
+}

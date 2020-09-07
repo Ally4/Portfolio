@@ -5,7 +5,6 @@ import BurgerAdmin from './BurgerAdmin';
 const Nav = styled.nav`
   width: 97%;
   height: 55px;
-  padding: 0 20px;
   display: flex;
   justify-content: space-between;
 
