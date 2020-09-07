@@ -8,29 +8,9 @@ body{
   overflow-y: auto;
 }
 
-.containerBlog, .blog{
-  flex: 1;
-  text-align: center;
-  color: white;
-}
-
 .head1{
   font-size: 50px;
   font-weight: bolder;
-}
-
-.head2{
-  font-size: 70px;
-  font-weight: bolder;
-  color: rgb(255, 255, 255, 0.3);
-}
-
-.smallIntroBlog{
-  text-align: center;
-  font-weight: bolder;
-  font-size: 30px;
-  padding: 2px;
-  color: rgb(255, 255, 255, 0.7);
 }
 
 .contact, .head1{
@@ -38,17 +18,90 @@ body{
   text-align: center;
 }
 
-.arrange_admin{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+.forms-create_user{
+  max-width: 700px;
+  margin: auto;
+  padding: 40px;
   justify-content: center;
+}
+
+.forms-create_user > form input[type=text]#create_user, form input[type=email]#create_user{
+  height: 30px;
+  width: 100%;
+  margin: 5px;
+  color: black;
+  font-weight: bold;    
+  border-radius: .5em;    
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.forms-create_user > form textarea{
+  height: 300px;
+  width: 100%;
+  margin: 5px;
+  color: black;
+  font-weight: bold;    
+  border-radius: .5em;   
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.forms-create_user{
+  flex: 1;
+  text-align: center;
+}
+
+.forms-create_user .send{
+  background-color: #F3C00A;
+  color: black;
+  font-weight: bolder;    
+  border-radius: .5em;  
+  margin-top: 20px;
+  padding: 10px 25px 10px 25px;
+  cursor: pointer;
 }
 
 .log > .head1{
   color: #F3C00A;
   text-align: center;
   font-size: 30px;
+}
+
+.main_user {
+  display: grid;
+}
+
+.create_blog_user {
+  width: 100%;
+  display: grid;
+  padding-top: 20px;
+}
+
+.container_create_user {
+  background-color: #fdfdfd17;
+  width:95%;
+  border-radius: .5em;
+  margin-left: 2.5%;
+}
+
+.submit{
+  background-color: #F3C00A;
+  color: black;
+  font-weight: bolder;    
+  border-radius: .5em;  
+  margin-top: 20px;
+  padding: 10px 25px 10px 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+p{
+  font-size: 20px;
+  color: white;
+}
+
+h1{
+  font-size: 60px;
+  color: white;
 }
 
 
@@ -58,23 +111,24 @@ body{
     overflow-y: auto;
   }
 
-  .head2 {
-    display: none;
-  }
-
   .containerEducation > .Education > .head1{
     margin-left: 30px;
   }
-
+  
   .containerSkills-Resume > .Skills-Resume > .head1 {
     margin-left: 35px;
-  } 
+  }
 }
+
 
 @media screen and (max-width:375px) {
  body{
   overflow-x: hidden;
  }
+ 
+  .Skills-Resume > .head1{
+    font-size: 40px;  
+  }
 
   .project > .head1, .smallIntroProject {
     margin-left: -40px;  
@@ -86,58 +140,42 @@ body{
 
   .resume > .head1{
     font-size: 40px;  
-  } 
-
-  .head2 {
-    display: none;
   }
-
- .containerEducation > .Education > .head1{
+  
+  .containerEducation > .Education > .head1{
     margin-left: 30px;
   }
 
   .containerSkills-Resume > .Skills-Resume > .head1 {
     margin-left: 10px;
-  } 
+  }
 }
 
-@media screen and (max-width:600px){ 
-  .head2 {
-    display: none;
-  } 
-
- .containerEducation > .Education > .head1{
+@media screen and (max-width:600px){
+  
+  .containerEducation > .Education > .head1{
     margin-left: 30px;
   }
 
   .containerSkills-Resume > .Skills-Resume > .head1 {
     margin-left: 10px;
-  }  
+  }
 }
 
 @media screen and (max-width:900px){
-  .head2 {
-    display: none;
-  }
-
-  .containerEducation > .Education > .head1{
+   .containerEducation > .Education > .head1{
     margin-left: 30px;
   }
 
   .containerSkills-Resume > .Skills-Resume > .head1 {
     margin-left: 10px;
-  }
+  } 
 }
 
 @media screen and (max-width:1200px){
-  .head2 {
-    display: none;
-  }
-
   .containerEducation > .Education > .head1{
     margin-left: 30px;
   }
-
   .containerSkills-Resume > .Skills-Resume > .head1 {
     margin-left: 10px;
   }
@@ -147,39 +185,40 @@ body{
   body{
    overflow-x: hidden;
   }
- 
+
    .Skills-Resume > .head1{
      font-size: 40px;  
    }
- 
+
    .project > .head1, .smallIntroProject {
      margin-left: 20px;  
    }
  
-    .project > .head1{
+   .project > .head1{
      font-size: 40px;  
    }
  
+  
    .resume > .head1{
      font-size: 40px;  
    }
  
-   .head2 {
-     display: none;
-   }
-   
    .containerEducation > .Education > .head1{
      margin-left: 30px;
-   } 
-
+   }
+ 
    .containerSkills-Resume > .Skills-Resume > .head1 {
      margin-left: 10px;
-   } 
+   }
+
+   .forms-create{
+    width: 60%;
+   }
  }
 
-@media screen and (max-width: 360px) { 
+@media screen and (max-width: 360px) {
   .containerSkills-Resume > .Skills-Resume > .head1{
     width: 80%;
     margin-left: 10px;
-  } 
+  }
 }

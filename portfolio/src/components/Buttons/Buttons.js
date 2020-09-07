@@ -1,19 +1,25 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
+import {Link} from 'react-router-dom';
+import fire from "../../config/fire";
 import "./Buttons.css";
 
-class Actions extends Component {
-  render() {
-    return (
-      <div className="action">
-        <button className="edit" value="Edit">
-          Edit
-        </button>
-        <button className="delete" value="delete">
-          Delete
-        </button>
-      </div>
-    );
-  }
-}
+const db = fire.firestore();
 
-export default Actions;
+const Action = (blog) => {
+
+  const toDelete = () => {
+    db.collection("Blogs").doc(blog.id).delete().then(() => alert("the blog is deleted")).catch(error => console.log(`the error is ${error}`));
+  };
+
+  return (
+    <div className="action">
+      <button className="edit" value="Edit"><Link to={`/blog/edit/${blog.id}`}>Edit</Link>        
+      </button>
+      <button className="delete" value="delete" onClick={toDelete}>
+        Delete
+      </button>
+    </div>
+  );
+};
+
+export default Action;
